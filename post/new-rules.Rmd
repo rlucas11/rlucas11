@@ -1,8 +1,5 @@
 ---
 title: "The Rules of Replication: Part I"
-autoThumbnailImage: false
-thumbnailImagePosition: left
-thumbnailImage: /img/profCarly.jpg
 author: "Richard E. Lucas"
 date: 2017-04-19
 categories: 

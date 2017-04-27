@@ -1,8 +1,5 @@
 ---
 title: "The Rules of Replication: Part II"
-autoThumbnailImage: true
-thumbnailImagePosition: left
-thumbnailImage: /img/ceceCouchEdit.jpg
 metaAlignment: center
 author: "Richard E. Lucas"
 date: 2017-04-23
