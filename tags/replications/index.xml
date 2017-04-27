@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Replications on Desk Rejected</title>
+    <link>https://rlucas11.github.io/rlucas11/tags/replications/</link>
+    <description>Recent content in Replications on Desk Rejected</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://rlucas11.github.io/rlucas11/tags/replications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Rules of Replication: Part II</title>
+      <link>https://rlucas11.github.io/rlucas11/2017/04/the-rules-of-replication-part-ii/</link>
+      <pubDate>Sun, 23 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rlucas11.github.io/rlucas11/2017/04/the-rules-of-replication-part-ii/</guid>
+      <description>In my previous post I focused on the question of whether replicators need to work with original authors when conducting their replication studies. I argued that this rule is based on the problematic idea that original authors somehow own an effect and that their reputations will be harmed if that effect turns out to be fragile or to have been a false positive. In this post, I focus on a second rule, one for which my objections may seem more controversial, at least to those who already agree that replications are valuable.</description>
+    </item>
+    
+    <item>
+      <title>The Rules of Replication: Part I</title>
+      <link>https://rlucas11.github.io/rlucas11/2017/04/the-rules-of-replication-part-i/</link>
+      <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rlucas11.github.io/rlucas11/2017/04/the-rules-of-replication-part-i/</guid>
+      <description>Recently I traveled to Vienna for APS’s International Conference on Psychological Science, where I gave a talk on “The Rules of Replication.” Thanks to the other great talks in the session, it was well attended. But as anyone who goes to academic conferences knows, “well attended” typically means that at best, there may have been a couple hundred people in the room. And it seems like kind of a waste to prepare a talk—one that I will probably only give once—for such a limited audience.</description>
+    </item>
+    
+  </channel>
+</rss>
