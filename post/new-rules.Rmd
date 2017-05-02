@@ -1,0 +1,132 @@
+---
+title: "The Rules of Replication"
+author: "Richard E. Lucas"
+date: 2017-05-02
+categories: 
+  - Replications
+tags: 
+  - Replications
+  - Reputations
+bibliography: "~/Dropbox/MyLibraryZ2.bib"
+link-citations: yes
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_10/v1493596079/profCarly_paf58m.jpg
+thumbnailImagePosition: left
+description: "Do researchers who conduct replication studies need to contact original authors?"
+draft: false
+---
+
+Recently I traveled to Vienna for APS's International Conference on Psychological Science, where I gave a talk on "The Rules of Replication." Thanks to the other great talks in the session, it was well attended. But as anyone who goes to academic conferences knows, "well attended" typically means that at best, there may have been a couple hundred people in the room. And it seems like kind of a waste to prepare a talk---one that I will probably only give once---for such a limited audience. So after reading Daniel Lakens's convincing [argument](http://daniellakens.blogspot.com/2017/04/five-reasons-blog-posts-are-of-higher.html) why blogs are often better than scientific articles, along with a suggestion by Yihui Xie [^1] that if one doesn't have a blog, one doesn't exist[^2], I thought I'd write up my talk in a series of blog posts. 
+
+[^1]: Author of many of the packages people use to do reproducible science, including [blogdown](https://github.com/rstudio/blogdown), which I used to create this blog. Yup, I wrote the post using RMarkdown, Blogdown, [Hugo](https://gohugo.io/), hosted it on [github](https://github.com/rlucas11/rlucas11), and wrote it on my linux computer. And not Ubuntu or anything cheesy like that, but ArchLinux. So, pretty hardcore. I hope this increases my openness credibility enough to make up for those nine years I spent working for Elsevier. 
+
+[^2]: Okay, the quote was really about having a website, but in the context of documentation of a package called "blogdown," I extrapolated.
+
+
+So the gist of my talk was this:
+
+People's reaction to replication studies can be surprising. It often seems that no matter how careful replicators[^3] are in the design of their study, or how thoughtful and restrained they are in the interpretation of their results, when these studies are eventually published, replication authors are criticized for violating some set of rules that they never knew existed. In short, there seems to be a unique set of rules--rules that are often made up by people who don't actually do replication studies--that are meant to apply selectively to replications.
+
+<br>
+<iframe src="//giphy.com/embed/U1Y2zn1vyzNGE" width="480" height="345.97402597402595" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/U1Y2zn1vyzNGE"></a></p>
+<br>
+
+And in case you think that I'm a overly sensitive about this issue and that nobody has ever really suggested such a set of rules, there's this: 
+
+> The purpose of this note is to propose rules for the interaction of replicators and authors, which should eventually be enforced by reviewers of proposals and reports of replication research [@kahneman_new_2014].
+
+But do we really need a separate set of rules governing how replications are conducted? Shouldn't broader rules that we have about ideal scientific practices be good enough? In these first few posts, I'll discuss some of the reasons why I think distinct rules for replication studies are problematic, starting with the topic of this post: 
+
+# Rule #1: You Need to Work with the Original Authors When Conducting A Replication Study
+
+@kahneman_new_2014 lays out the arguments for this rule very clearly, so I'll focus on specific quotes from his article. The first thing that struck me was this:
+
+> I believe that current norms allow replicators too much freedom to define their study as a direct replication of previous research.
+
+Authors of any paper---replication or not---don't get to "define" their paper any way they like without critical evaluation by those who read the paper. Replicators can't simply assert that their papers are direct replications, and once they say these words out loud, all of the rest of us have to accept this label uncritically. Instead, replicators, like all researchers, design a study, pitch it to the scientific community as making some specific contribution, and defend that pitch with argumentation and empirical evidence. They then release their paper to the community for evaluation. Individual members of the scientific community can accept the authors' argument or reject it. Importantly, different members of that community may disagree about the value of any particular replication study. So there is no final decision about whether a replication was direct or indirect, just as there is no official determination of whether an original study was competently conducted or fatally flawed. Authors make arguments and the scientific community evaluates them; this is just as true for replication studies as original research. But just as the replicators don't get to decide, neither to the original authors.[^4]
+
+[^3]: And like most people who conduct replications, I hate this term. But I "people who conduct replications" is too unweildy, so I'll use it.
+
+[^4]: Uri Simonsohn made this point [before](http://journals.sagepub.com/doi/abs/10.1177/0956797616665220?journalCode=pssa).
+
+#### Expertise and Hidden Moderators
+
+A second argument that is often used in support of the idea that replicators must work with the original authors is that these original authors have knowledge about procedures that is required to make the study "work":
+
+> In the myth of perfect science, the method section of a research report always includes enough detail to permit a direct replication. Unfortunately, this seemingly reasonable demand is rarely satisfied in psychology, because behavior is easily affected by seemingly irrelevant factors.
+
+> For example, experimental instructions are commonly paraphrased in the methods section, although their wording and even the font in which they are printed are known to be significant.
+
+I get it. The people who conduct the original studies really believe in the theories that motivate their work, they understand the nuances of these theories and the methods used to test them, and they often have decades of experience that they rely on when designing and running their studies. I also understand that methods sections are often incomplete, partly because of length restrictions, and partly because researchers can forget important details by the time they write their study for publication. But the principle that guides decisions about what to include in methods sections is that authors include the details that are important. And if a detail (like the font or wording) doesn't make it into the published report, then it is likely due to the fact that the author didn't think it was important. And if the author didn't think it was important, then it is much less plausible that the author thought very carefully about it before designing the study. 
+
+To be sure, replications may fail because replicators stumble across some presumably inconsequential factor that ends up making a big difference for the result. This type of fortuitous discovery can be interesting and can help move research forward. But all too often, original authors point to minor discrepancies that were not emphasized in the theory or method section of the original work and suggest that variation in this factor can explain the differences in results.[^9] If the original authors notice some discrepancy in a failed replication that they believe matters, then the onus is on them to conduct the study that shows that this previously unnoticed factor really makes a difference. 
+
+[^9]: I don't know a lot about philosophy of science, and I know that there is lots of disagreement about how science should proceed, but these always sound like the *ad hoc* modifications that pretty much all philosophers of science agree are problematic if those who propose them are unwilling to follow them up with empirical tests. 
+
+
+
+#### Replications Have Implications for People's Reputations
+
+Kahneman goes on to argue that there is some special status for replication studies because they have implications for the reputation of the original author:
+
+> It is good form to pretend that science is a purely rational activity, an objective and unemotional search for the truth. But of course we all know that this image is a myth. There is a lot of passion and a lot of ego in scientists’ lives, reputations matter, and feelings are easily bruised. Some interactions among scientists are fraught, and the relation between the original author of a piece of research and a would-be replicator can be particularly threatening.
+
+and 
+
+> Even rumors of a failed replication cause immediate reputational damage by raising a suspicion of negligence (if not worse). 
+
+So let's get this out of the way: A failed replication should have no bearing on the reputation of the author who originally published the finding. Any individual replication study can fail to reproduce the original findings because the original finding was a false positive, because the original study included important contextual features that changed in the replication, because the replicator was incompetent, because of sampling error in the replication, or because of fraud (on the part of the original researcher *or* the replicator). A single failed replication, on its own, can never tell us which of these is responsible for the discrepancy. And when I acknowledge these possibilities, I am not just naively adopting the "good form" position that Kahneman mentions above. I can't think of any published replication studies that have claimed otherwise. 
+
+Maybe I am wrong about this, but my perception is that those who are most likely to suggest that failed replications imply fraud are not the people doing replications, but those who argue against the value of replications.[^5] Advocates for replication, on the other hand, generally present a much more nuanced perspective on the implications of a failed replication. Specifically:
+
+<br>
+
+* Those who value replication also typically endorse preregistration, which means that they tend to judge the contribution of a study based on the extent to which it addresses an important and interesting question and the extent to which it uses strong and innovative methods rather than on the results that are obtained.[^4a]
+
+[^4a]: Wouldn't it be great if a side effect of preregistration would be to reduce concerns about replication studies? Such a shift would emphasize that studies (and hence, the authors who conduct them) should be evaluated based on their design and methods, not the results that are obtained.
+
+* Those who value replications typically know and understand the [dance of the p-values](https://youtu.be/5OL1RqHrZQ8). Thus, they tend be skeptical about the informational value of any single study. And because of this, they are unlikely to use the timing of a study (i.e., whether it was first or most recent) as an indicator of believability. 
+
+
+* Those who value replications tend to be more focused on estimation and are either skeptical of or relatively sophisticated in their [use](http://daniellakens.blogspot.com/2016/12/tost-equivalence-testing-r-package.html) of null hypothesis significance testing when evaluating the results of replication studies. Thus, they are unlikely to rely on simplistic criteria for determining whether a replication was a "success" or not. 
+
+[^5]: e.g., http://journal.frontiersin.org/article/10.3389/fpsyg.2017.00702/full
+
+To be sure, those who conduct and value replication studies sometimes will make statements about changes in their beliefs about a phenomenon after a failed replication. But those statements are typically justifiable (even if they are ultimately subjective): a large number of failed replications of a single effect provides evidence that we should give up our belief in the original effect,[^6] and any two studies that tackle the same question can be weighted by the the quality of those studies[^7] when evaluating our beliefs about the phenomenon in question. But just because a replication study comes last does not mean that it has some sort of privileged status, and with rare exceptions, replicators don't argue that it does.[^8] 
+
+[^6]: And yes, I'm going to stop talking about [this](http://journals.sagepub.com/doi/full/10.1177/1745691616674458) study in my Intro Psych course as a result of this careful, multi-lab replication attempt. 
+
+[^7]: Including sample size, preregistration, etc.
+
+[^8]: Kahneman actually brings up this last issue with the following quote about the timing or original and replication results: 
+
+    > The relationship is also radically asymmetric: the replicator is in the offense, the author plays defense. The threat is one-sided because of the strong presumption in scientific discourse that more recent news is more believable. 
+
+    I will leave it to others to document whether Kahneman's view about the role of [timing](http://andrewgelman.com/2016/01/26/more-power-posing/) is correct. My own impression (and one that I believe is supported by evidence) is that the finding that comes first is weighted more heavily, and that it is extremely difficult to overturn findings in the literature even if the original evidence was extremely weak. 
+
+#### C'mon, What's the Problem with More Rules for Replication Studies?
+
+The final argument in favor of this first "Rule of Replication" is that it simply isn't a big deal to go through the process of working with original authors when conducting replication studies. Kahneman's four-step procedure *simply* requires that replicators send a "detailed description" of the procedures to the original authors, including a video when relevant. The replicators must then wait some limited time for the original authors to provide comments and modification to these plans.[^10] If any disagreements about procedure remain, the replicators must include a statement explaining why the original authors' suggestions were not followed. 
+
+[^10]: Simple, right? Any Registered Replication Report editors want to comment on how easy this is?
+
+In other words, at a time when many researchers object that even the simplest efforts towards preregistration are too onerous, the "rules of replication" state that replicators---and only replicators---must go through all the standard procedures of preregistration *and* add the extra step of a negotiation with a potentially hostile set of collaborators. If the problem that this rule is supposed to solve is the lack of methodological detail in our papers, why not address this problem directly? Instead of throwing up our hands and admitting that our requirements for undergraduate-level papers ("your paper must provide sufficient detail to allow others to replicate your work") can't actually be met in our own scientific journals, why not make our methods sections (or at least our methods sections plus preregistration documents and open materials) better? This would not only obviate the need for special rules for replication, it would improve science more broadly.
+
+Kahneman pitches these rules less as restrictions on those who do replications and more as an agreement between those who conduct original studies and the researchers who wish to replicate their work, suggesting that this is equally burdensome for original researchers and replicators. For instance, he notes that original authors already have obligations in the current system:
+
+> Norms are in place to guide authors of research when they are informed that someone intends to replicate their work. They are obligated to share the details of their procedures and the entire data of their study, and to do so promptly. 
+
+<br>
+<iframe src="//giphy.com/embed/CftKMim18AtQQ" width="480" height="328.5" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dog-what-say-CftKMim18AtQQ"></a></p>
+<br>
+
+Well, good luck with [that](http://psycnet.apa.org/?&fa=main.doiLanding&doi=10.1037/0003-066X.61.7.726). Perhaps if we could trade an honest-to-goodness, enforceable preregistration-plus-data-sharing requirement for original research, I would be willing to buy in to some sort of rule that replicators must work with original authors.[^11] But given current norms regarding preregistration and data sharing, this particular "rule" seems like an unnecessary hurdle that serves only to increase the difficulty of conducting and publishing replication studies. 
+
+[^11]: You see what I did there? Once original authors buy into the idea that preregistration is essential, interactions with replicators become simple. All a replicator needs to do is follow the preregistration plan. 
+
+#### What's the Big Deal About Replications?
+
+If we take the principles behind Kahneman's rules seriously (and I think we should), then the rules he proposes apply to a much broader range of studies than just replications. For instance, I completely agree that "There is a lot of passion and a lot of ego in scientists’ lives, reputations matter, and feelings are easily bruised" and I'm actually mostly okay taking these factors into account when developing norms for the field. But is the risk to reputation really limited to the potential for failed replications? And if not, then why would we selectively apply these rules to replication attempts? If I believe that your highly cited study has a confound, and I conduct an entirely new study to show that once this confound is removed, your career-defining effect goes away, then this should have a bigger effect on your reputation than any failed replication (after all, I just showed that you designed a bad study). Yet as far as I know, nobody has suggested that we need permission any time we test someone else's theory with a new design. 
+
+Both the idea that an original author's reputation is harmed by a failed replication and the suggestion that the original author needs to participate in the replication attempt come from a strange and problematic sense that those who first publish evidence for an effect somehow have "ownership" of that effect. Authors should absolutely get credit for the interesting questions they identify and for the novel methods they developed to test them. But the answer to those questions should reflect the state of the world and should have absolutely no bearing on the reputation of the authors who first thought to ask them. The irony here is that those who don't do replications are more likely to assign a special status to such studies than are those who do them. Although Kahneman and others hope that creating special rules for replication studies can avoid the hurt feelings that come with failed replications, I think a better approach is simply to change practices in such a way that preregistration and direct replications become the norm. 
+
+#### References
