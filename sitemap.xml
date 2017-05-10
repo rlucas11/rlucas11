@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://deskreject.com/2017/05/the-rules-of-replication-part-ii/</loc>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://deskreject.com/2017/05/the-rules-of-replication/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
   </url>
@@ -17,20 +22,26 @@
   </url>
   
   <url>
+    <loc>http://deskreject.com/tags/manipulation-checks/</loc>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://deskreject.com/post/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://deskreject.com/tags/replications/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://deskreject.com/categories/replications/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,13 +53,13 @@
   
   <url>
     <loc>http://deskreject.com/tags/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://deskreject.com/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
