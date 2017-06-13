@@ -9,14 +9,14 @@ tags:
   - Manipulation Checks
 bibliography: "~/Dropbox/MyLibraryZ2.bib"
 link-citations: yes
-thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_10/v1493596082/ceceCouchEdit_z6fmry.jpg
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_30/v1496179892/ceceCouchEdit2_g1geql.jpg
 thumbnailImagePosition: left
 description: "How should we deal with failed manipulation checks in replication studies?"
 draft: false
 ---
 
 <div class="figure">
-<img src="http://res.cloudinary.com/demy2onqi/image/upload/q_30/v1493596115/ceceCouch_ns54qn.jpg" style="width:50%; margin:auto;"/>
+<img src="http://res.cloudinary.com/demy2onqi/image/upload/q_48/v1496179902/ceceCouch2_rhhwfx.jpg" style="width:50%; margin:auto;"/>
 <p class="caption">Cece doesn't understand the rules of the couch.</p>
 </div>
 

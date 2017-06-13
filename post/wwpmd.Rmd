@@ -1,0 +1,79 @@
+---
+title: "W.W.P.M.D.?"
+author: "Richard E. Lucas"
+date: 2017-06-13
+categories: 
+  - Replications
+tags: 
+  - Replications
+  - Context
+  - Expertise
+bibliography: "~/Dropbox/MyLibraryZ2.bib"
+link-citations: yes
+metaAlignment: center
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/c_crop,g_north_west,h_340,q_80,w_340,y_60/v1496180809/abby2_zv6t6g.jpg
+thumbnailImagePosition: left
+description: "Arguments about expertise and context dependence are often dismissed as defensive and unscientific reactions to failed replications; but what do we do when a hero of the replication movement emphasizes the importance of these factors when evaluating failed replications?"
+draft: false
+---
+<div class="figure">
+<img src="http://res.cloudinary.com/demy2onqi/image/upload/q_50/v1496180809/abby2_zv6t6g.jpg" style="width:50%; margin:auto;"/>
+</div>
+
+One of the most contentious issues in recent debates about replication studies concerns the [importance](http://www.pnas.org/content/113/23/6454) of [context](http://www.pnas.org/content/113/34/E4933) in explaining failed replications. Those who question the value of direct replication often suggest that many psychological effects should be *expected* not to replicate because they depend so strongly on a multitude of seemingly inconsequential contextual [factors](https://ramscar.wordpress.com/2015/08/05/the-unspeakable-in-pursuit-of-the-unrepeatable/). Thus, because you can't step in the same river twice, direct replication attempts should often be expected to fail. 
+
+This argument has always seemed a little strange to me. Sure, I understand that contexts change, and it may be difficult to specify how the dozens, or hundreds, or even thousands of never-before-considered contextual features that exist at the time of the original study impact the incredibly complex mental processes that psychologists tend to study. But if that is true, then how did the original authors predict the effect in the first place? In other words, if a specific result depends not only on the methodological details that make it in to the paper, but also on the specific historical context in which the study was conducted, the precise political leanings of the population from which the sample was drawn, the time of the semester during which the study was conducted, the dress of the experimenter while interacting with the participants, etc., etc.; and *none* of these factors was explicitly considered ahead of time by the original authors; then how did they stumble upon the exact combination of factors that made their study *work* the first time they tried it?[^1] If the river is constantly changing, then how did the authors know precisely when to jump in and run their study?
+
+There are times when I think the context-sensitivity argument makes sense: Sometimes we jump into the river, look around, and report what we happen to see. This is exploratory research, and when we do exploratory research, it is difficult to tell how the changing conditions of the river (including some conditions we don't even notice) affect the phenomena we initially observe. In these cases, it is totally plausible to suggest that when we step in the river again, we might see something completely different. But most researchers who bring up the context-sensitivity argument claim to be doing confirmatory research. And the power of confirmatory research is that it comes from a theory that is clear enough to predict that if certain conditions exist, an effect will emerge. In other words, despite the noise created by the ever-changing contexts, the researchers know enough about the phenomenon to make a prediction. In these confirmatory cases, the context-sensitivity argument is harder to buy.
+
+[^1]: Remember, most authors who challenge the validity of failed replication studies deny that they have a large file drawer of unpublished studies in which these contextual factors were tweaked to get them right.
+
+
+
+Okay, but that isn't really the point of this post. The point is that sometimes it can be really helpful to hear arguments from people who you think of as being "on the same side" as you, but who seem to offer arguments that run counter to your beliefs. I had this experience the other day while (finally) listening to Paul Meehl's [Philosophical Psychology](http://meehl.umn.edu/recordings/philosophical-psychology-1989) lectures[^2]. Just like William James seems to have described just about every phenomenon that a modern social psychologist could ever think to study and Donald Trump seems to have a four-year-old tweet presaging every controversy he steps into today, Paul Meehl inevitably has some quote or article that is directly relevant to current debates about replicability and research practices. Those who push for reform in methodological practices often cite him approvingly.
+
+<br>
+<div class="figure">
+<img src="http://res.cloudinary.com/demy2onqi/image/upload/q_60/v1496267293/6BDRpa_ixwjmb.png" style="margin:auto;"/>
+<p class="caption">Little known fact: Meehl was the first to use the phrase "This. So much this." when quoting a lengthy section of Popper.</p>
+</div>
+
+
+
+
+I typically listen to Meehl's lectures while walking the two miles from home to the coffee shop that serves as my sabbatical office, so I am not always paying as close attention as I would like. I thought maybe I misheard him when he started talking (around the 24th minute of Lecture 3) about latent learning and the failures to replicate this basic, intro-psych-level phenomenon. Meehl seemed to be making all the same arguments for context-dependence and researcher expertise that I typically find so frustrating. For instance, he admitted this:
+
+> It was obvious that there was a correlation between whether you got latent learning and what lab you were in. Nobody disputed that.
+
+and this:
+
+> In Berkeley they would get latent learning and in Iowa, the Spence-Hullians would fail to get it. And here at Minnesota MacCorquodale and I would get it part of the time and part not (laughter).
+
+In a particularly amusing section, he describes why he and MacCorquodale took on specific roles when running rats through mazes, and how this particular combination of expertise and contextual sensitivity could affect the results they obtained. They believed that to get the experiments to work, the rats needed to be calm and relaxed, and almost by accident, they had stumbled on a precise set of procedures that they believed was required to get the research to work: 
+
+> MacCorquodale and I decided (we didn't have any good evidence) that uh, he should carry the rats because due to my cyclothymic genes, if I was having a manic night, why I would move faster than normal, and MacCorquodale, on the other hand, had a tendency to mix up the words "left" and "right"; and when you're doing t-maze research, that can ruin your experiment (laughter). I'm serious! So we decided that Meehl records, MacCorquodale carries. You're not gonna put that in the Journal of Comparative. But there it is.
+
+[^2]: Ahhhhh...sabbatical!
+
+So MacCorquodale didn't know his left from his right and Meehl was too manic to make the rats relax, so they set up their procedures to deal with these idiosyncratic limitations. Meehl goes on to note that taking these and other related factors into account when evaluating failures to replicate is not inappropriate, and that such differences should be considered when interpreting failed replications. 
+
+So if we believe that Paul Meehl was a pretty smart guy---one who was pretty committed to doing science right---then what do we make of this argument? Is there something more to the context-sensitivity argument than advocates of replication research are willing to admit? 
+
+I think Meehl's comments are useful because they help remind us what the context-sensitivity debate is *really* about. Meehl seems pretty clear here: context and expertise are certainly within-bounds as scientific explanations for failed replications. However, the importance of these contextual factors are subject to the same empirical scrutiny as any other feature of the research design. The idea that you *consistently* found evidence for latent learning in Berkeley and *consistently* failed to find such evidence in Iowa implied that this contextual moderator was itself *replicable*. Even in his amusing anecdote about the procedures used at Minnesota, he acknowledges that his beliefs about the factors that affect latent learning are not yet supported by evidence. To me, this means that he doesn't expect us to take this specific explanation too seriously; his observations seem to have been meant solely to point out some of the factors that could be examined if one wanted to explain the differences in results. 
+
+`r blogdown::shortcode_html("pullquote left")`
+**Everyone--including the staunchest advocates of direct replication---agrees that context and researcher expertise *can* matter.**
+`r blogdown::shortcode_html("/pullquote")`
+
+I always thought that it was clear that everyone---including the staunchest advocates of direct replication---agreed that context and researcher expertise *can* matter. But maybe the fact that Meehl thought it was necessary to spend twenty minutes of his lecture[^4] making this point means that (a) some scientists really don't acknowledge that these factors should be considered when evaluating failures to replicate, and (b) we're not doing a good enough job explaining that our objections to arguments about context (or related arguments about researcher expertise) only emerge when context sensitivity is used as a *post-hoc* explanation for failed replications, without empirical evidence or a commitment to examine those moderating factors in future empirical work. 
+
+[^4]: Granted, a 30-year-old lecture.
+
+Fortunately, methodological reformers are constantly coming up with new ways to settle debates about research practices and the evaluation of evidence. @simons_constraints_2017 have a great new [paper](https://osf.io/preprints/psyarxiv/w9e3r/) in which they propose that empirical articles should incude a section describing any *constraints on generality* that the authors believe exist.[^sips] In other words, they ask authors to think more carefully *before any post-publication replications are attempted* about the contextual factors that might be necessary for the reported effect to emerge. To return to the often-used river analogy, a statement of constraints on generality specifies (presumably based on the theory that was used to make the prediction in the first place) which features of the ever-changing river are necessary for the observed effect to occur again. Such a statement can prevent replication researchers from ignoring theoretically important contextual factors and running uninformative replication studies; and it can keep original authors honest about which contextual factors they really believed would matter before seeing the replication results. So if you think context matters for a study you are trying to publish, then consider the advice of @simons_constraints_2017 and include a statement regarding constraints on generality. 
+
+[^sips]: Another nice example of a concrete product that resulted from the first meeting of the [Society for the Improvement of Psychological Science](http://improvingpsych.org). If you are interested in working on similar projects, join SIPS and attend the meetings!
+
+So *what would Paul Meehl do* when encountering arguments about context sensitivity as an explanation of failed replications? It seems from his lecture that he would whole-heartedly agree that such explanations are within-bounds for scientific discourse. However, I'd imagine that he would also stipulate that those who rely on this argument should follow all the other rules for scientific investigations. So I'll buy your context sensitivity argument for a failed replication if the contextual factor you cite was discussed in a statement on generality in the original report or the importance of an unpredicted contextual moderator receives empirical support from new, confirmatory studies. 
+
+
+**References**

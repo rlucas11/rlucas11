@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Desk Reject</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://deskreject.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Context</title>
+      <link>http://deskreject.com/tags/context/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://deskreject.com/tags/context/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expertise</title>
+      <link>http://deskreject.com/tags/expertise/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://deskreject.com/tags/expertise/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Manipulation Checks</title>
@@ -23,7 +41,7 @@
     <item>
       <title>Replications</title>
       <link>http://deskreject.com/tags/replications/</link>
-      <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>http://deskreject.com/tags/replications/</guid>
       <description></description>

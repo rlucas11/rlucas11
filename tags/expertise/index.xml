@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Expertise on The Desk Reject</title>
+    <link>http://deskreject.com/tags/expertise/</link>
+    <description>Recent content in Expertise on The Desk Reject</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://deskreject.com/tags/expertise/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>W.W.P.M.D.?</title>
+      <link>http://deskreject.com/2017/06/w.w.p.m.d./</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://deskreject.com/2017/06/w.w.p.m.d./</guid>
+      <description>One of the most contentious issues in recent debates about replication studies concerns the importance of context in explaining failed replications. Those who question the value of direct replication often suggest that many psychological effects should be expected not to replicate because they depend so strongly on a multitude of seemingly inconsequential contextual factors. Thus, because you can’t step in the same river twice, direct replication attempts should often be expected to fail.</description>
+    </item>
+    
+  </channel>
+</rss>
