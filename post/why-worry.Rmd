@@ -1,0 +1,76 @@
+---
+title: "Yes, Your Field Does Need to Worry About Replicability"
+author: "Richard E. Lucas"
+date: 2017-09-05
+categories: 
+  - Improving Psychology
+tags: 
+  - Replications
+  - Replicability
+  - Theory
+bibliography: "~/Dropbox/MyLibraryZ2.bib"
+link-citations: yes
+metaAlignment: center
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/c_crop,e_art:peacock,g_north_east,h_420,q_80,w_420,x_74/v1501173097/fight_j4trqx.jpg
+thumbnailImagePosition: left
+description: "Are there areas within psychology that don't currently have a problem with replicability? Should certain subdisciplines of psychology be exempt from new policies designed to improve the rigor, replicability, and reproducibility of psychological research? I argue that at the very least we don't know yet, but that the answer to both questions is likely to be 'no'."
+draft: false
+---
+
+One of the most exciting things to happen during the years-long debate about the replicability of psychological research is the shift in focus from providing evidence that there is a problem to developing concrete plans for solving those problems. Whether it is journal [badges](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002456) that reward good practices, statistical [software](https://mbnuijten.com/statcheck/) that can check for problems before papers are published, collaborative [efforts](https://osf.io/view/studyswap/) to deal with limited resources and underpowered studies, [proposals](https://psyarxiv.com/mky9j/) for new standards of evidence, or even entire [societies](http://improvingpsych.org) dedicated to figuring out what we can do to make thing better, many people have devoted an incredible amount of thought, time, and energy to figuring out how we can fix any problems that exist and move the field forward. Of course, not all of these proposed solutions will have the desired effect, and some may even cause problems we haven't even thought of yet; that's why it is also important to study the effects of these initiatives with more and better meta-scientific research.[^ampps] But some of these efforts will likely pay off, and I'm hopeful and optimistic that future investigations into the replicability of findings in our field will show improvement over time. 
+
+[^ampps]: If only there were a whole new [journal](https://www.psychologicalscience.org/publications/ampps) that could do just that!
+
+Of course, many of the solutions that have been proposed come with some cost: Increasing standards of evidence requires larger sample sizes; sharing data and materials requires extra effort on the part of the researcher; requiring replications shifts resources that could otherwise be used to make new discoveries. Again, meta-scientific research is needed to weigh the costs of these changes against their benefits, and I am certainly in favor of conducting that research as the field adopts new norms regarding research practices. However, one response to these proposals that occasionally comes up is, to me, somewhat troublesome: The idea that calls for improved practices is unfair because some fields within psychology *don't have a replicability problem*. 
+
+For instance, after Hal Pashler and J.P. de Ruiter's recent [column](https://www.psychologicalscience.org/observer/taking-responsibility-for-our-fields-reputation) in the *APS Observer* about how psychology can bolster its credibility, Pashler noted that he had received complaints from friends in cognitive psychology who argued that no changes in that field were needed because everything was already fine: 
+
+<br>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">“No big replic problem in cognitive…so why must our work considered suspect? You think need a PRR before we can believe in PRP, Hal?”  2/2</p>&mdash; Hal Pashler (@hpashler) <a href="https://twitter.com/hpashler/status/904358341492654080">September 3, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br>
+
+The idea that replicability is only problem for some fields of psychology is an important one to address, because it has implications for how new policies are adopted and implemented. For instance, if problems with replicability are limited to certain subdisciplines, then broad changes at funding agencies or cross-disciplinary journals would not be needed. Instead, policies could target just those areas where the problems are most likely to occur. In addition, those who fail to see a problem in their own discipline may not be motivated to participate in ongoing discussions about research practices, which means that valuable perspectives and opinions about best practices or the costs of certain proposals are not being heard. For these and other reasons, I think that the idea that certain subdisciplines don't need to worry about replicability is problematic. 
+
+<br>
+<div class="figure">
+<img src="http://res.cloudinary.com/demy2onqi/image/upload/e_art:peacock,q_80/v1501173097/fight_j4trqx.jpg" style="width:75%; margin:auto;"/>
+<p class="caption">"YOUR field's the problem, not mine!" Fight!</p>
+</div>
+
+Let me start by saying that I, too, work in an area that one could argue might be immune to the problems that have plagued some subdisciplines of psychology. I'm a personality psychologist, and we're known (and often criticized) for our [boring](http://www.sciencedirect.com/science/article/pii/S002210311600007X) descriptive studies, many of which use very large samples and are replicated over and over again. Just as an example, take a look at how many studies have simply examined test-retest correlations of personality traits over varying periods of time.[^1]
+
+[^1]: When you wake up, come back again and I'll continue. 
+
+But you'll never hear me say that personality doesn't have a replicability problem, and I think I'm pretty quick to challenge those of my colleagues who do.[^2] First of all, I'm a pretty superstitious guy, and I'd be really worried that simply saying those words out loud would cause a creepy Schimmackadook[^uli] to crawl out of my computer monitor with an oozing spreadsheet of my totally implausible p-values in its hand to prove that my career was built on p-hacked trips down the garden of forking paths.
+
+[^2]: Cut it out [David](https://funderstorms.wordpress.com/2016/05/12/why-doesnt-personality-psychology-have-a-replication-crisis/)!
+
+[^uli]: Mashup monster name used with permission...thanks for being a good sport, Uli!
+
+But more importantly, the fact that personality psychologists do many things well doesn't protect us from some really basic tendencies that can lead to unreplicable research. That is why the editorial staff at the *Journal of Research in Personality* recently adopted a relatively stringent set of new [policies](http://www.sciencedirect.com/science/article/pii/S0092656617300211?via%3Dihub) designed to encourage continued improvements and even higher quality research. And at this stage in the history of psychology's attempts to address concerns about replicability, I'd be skeptical about any subdiscipline whose members simply assert that their area of research does not have a problem.
+
+To be sure, I think that there is good reason to think that the *extent* of the problem may vary across disciplines. We already know from the [Reproducibility Project: Psychology](http://science.sciencemag.org/content/349/6251/aac4716) that at least for the sample of studies that was selected for this project, the replication rate was higher for cognitive psychology studies than for social psychology studies (though, it was still just 50% in the former). And there are some good reasons why we might expect this to be the case. One of the most plausible explanations for this difference that I have heard concerns the fact that cognitive studies more frequently use within-person designs, which at the very least help to address concerns about the very low power that plagues the field and can lead to unreplicable results. Other suggested explanations include the idea that cognitive psychology uses measures and paradigms that are more standardized and better established, which reduces flexibility and context sensitivity; that  cognitive psychology (unlike social psychology) is based on strong, established theories which lead to stronger and more plausible predictions; or the possibility that within-paper replications are more normative within cognitive psychology than in other disciplines.
+
+But here's why I think these arguments are not convincing. First, we have no idea how replicable findings from cognitive psychology (or any other subdiscipline) really are. As people are quick to point out when criticizing the RP:P, the sample of studies selected for replication was not random, so we can't use the resulting numbers as estimates of *the* replication rate. This also means that any discipline-specific estimates, like the modest 50% replication rate for cognitive psychology, should not be seen as definitive. So any claims that a specific field is *free of* problems with replicability are simply assertions based on opinion.
+
+In addition, many of those who defend the areas of psychology that clearly do have problems use the *exact same arguments* to dismiss the empirical evidence that problems with replicability exist in their field. For instance, many of the social psychologists whose studies have had the most trouble replicating in recent years were celebrated for being brilliant theorists when I was in graduate school. And many of the most strenuous modern defenses of social psychological studies that fail to replicate fall back on the strength of the theory that motivated them. Critics of social psychology will dismiss the idea that the theories were all that strong to begin with (and I'm inclined to agree), but the point is that insiders' assertion that the strength of their theories prevents problems with replication is not strong evidence for the health of a field. 
+
+More importantly, I'm pretty convinced by @smaldino_natural_2016, who [argued](https://arxiv.org/pdf/1605.09511.pdf) that the incentive structure that we work under can pull for bad practices, unless we do something to deal specifically with those forces. From the abstract to their article: 
+
+> Poor research design and data analysis encourage false-positive findings. Such poor methods persist despite perennial calls for improvement, suggesting that they result from something more than just misunderstanding. The persistence of poor methods results partly from incentives that favor them, leading to the natural selection of bad science. This dynamic requires no conscious strategizing---no deliberate cheating nor loafing---by scientists, only that publication is a principle factor for career advancement
+
+If Smaldino and McElreath are right, then all it takes is for publication to be a factor for career advancement for false-positive findings to propagate. So perhaps it is easier, given the use of within-person designs, to conduct highly powered studies that follow very clearly from past research and theory in cognitive psychology than in other subdisciplines. But everyone---including cognitive psychologists---is working with limited resources, and there will always be pressure to do more with less. Someone who cranks out ten papers per year will be rewarded more heavily than someone who publishes three papers per year, regardless of discipline. And if skipping that extra replication study, or dropping that one participant who seemed to misunderstand the instructions, or transforming that one variable you didn't anticipate needing to transform gets you that extra paper (which gets your grant renewed, which allows you to continue to support your post doc who really needs a job, etc., etc.), then at least some of the people in your field are going to take these short cuts and produce research that does not replicate.  And this means that the selection pressures that Smaldino and McElreath are there, even when the possibility for careful, high-powered research exists. 
+
+Not to mention the fact that one does not need to look that hard to find studies in cognitive psychology that certainly build on well-established theories and that use high-powered, within-person designs...but that then predict performance on these established task from a novel individual difference measure, a design feature that then eliminates the power advantage of using a within-person design. So the pressures that Smaldino and McElreath describe exist, even in fields where the *potential* for conservative advances and strong methods exist. 
+
+## It Is Possible to Prove Me Wrong
+
+My concern about using arguments like the strength of theory in a field (or even slightly better arguments like the normativeness of exact replications within a subdiscipline) as an explanation for why that field is immune to problems with replicability is that the argument itself is based on a subjective evaluation of the quality of work that is produced within that field relative to what is produced in others. I think it's pretty easy to see why an insider who makes such an argument might be biased. But my objection to this subjective argument doesn't mean that objective empirical evidence couldn't be used to make the same point. And honestly, I would love it if it were true that some other field was able to surmount the obstacles to doing good science, even if it was not my field that was the one serving as this shining example. Given the alternative of wallowing in pessimism about the extent to which the problems we face can be fixed, it would give me an incredible amount of hope if there was some subdiscipline within psychology (or even within science more broadly) that had already been able to overcome the strong incentives that pull for bad science. 
+
+For instance, if the studies in a specific field like cognitive psychology work well because the hypotheses, design, and analysis follow so clearly from existing theory, then that field should be able to quickly and easily move almost entirely to a registered-report model with absolutely no impact on the rate of significant findings that that field produces. Meta-analyses should show little evidence of publication bias, and distributions of p-values should match what we would expect if adequately powered studies with little p-hacking were being conducted. Note that none of these suggestions requires a massive new Reproducibility Project to prove the strength of the field. If this empirical evidence existed, I would happily consider alternatives to the proposals for increased transparency and rigor in favor of modeling the rest of science on what these successful fields are already doing right.
+
+Until that evidence exists (and maybe it already does; feel free to let me know in comments), I will certainly pay attention to fields where things appear to be at least a little bit better to identify features that I can adopt in my own research. But I will also rely on what I know about current incentive structures and will continue to promote broader policies that enhance rigor and can be empirically shown to increase replicability in all areas of psychology. 
+

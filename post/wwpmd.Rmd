@@ -1,5 +1,5 @@
 ---
-title: "W.W.P.M.D.?"
+title: "W.W.P.M.D?"
 author: "Richard E. Lucas"
 date: 2017-06-13
 categories: 
