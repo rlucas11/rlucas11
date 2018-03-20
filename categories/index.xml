@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on The Desk Reject</title>
-    <link>/categories/</link>
+    <link>http://deskreject.com/categories/</link>
     <description>Recent content in Categories on The Desk Reject</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://deskreject.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Happiness</title>
-      <link>/categories/happiness/</link>
+      <link>http://deskreject.com/categories/happiness/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/happiness/</guid>
+      <guid>http://deskreject.com/categories/happiness/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Psychology</title>
-      <link>/categories/improving-psychology/</link>
+      <link>http://deskreject.com/categories/improving-psychology/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/improving-psychology/</guid>
+      <guid>http://deskreject.com/categories/improving-psychology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Replications</title>
-      <link>/categories/replications/</link>
+      <link>http://deskreject.com/categories/replications/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/replications/</guid>
+      <guid>http://deskreject.com/categories/replications/</guid>
       <description></description>
     </item>
     
