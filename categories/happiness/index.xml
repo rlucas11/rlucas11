@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Happiness on The Desk Reject</title>
+    <link>/categories/happiness/</link>
+    <description>Recent content in Happiness on The Desk Reject</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/happiness/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Happiness Research During the Replication Crisis</title>
+      <link>/2018/03/happiness-research-during-the-replication-crisis/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/happiness-research-during-the-replication-crisis/</guid>
+      <description>In honor of International Day of Happiness, I’m posting my SPSP talk from a few weeks ago, where I discuss happiness research during the replication crisis. I talk about some good things about happiness research, and also some things that could be improved. But more importantly, I brag about my seventh grade awards, talk about the type of happiness research that I’m most skeptical about, praise data thugs, and tell the story of how we became replication bullies.</description>
+    </item>
+    
+  </channel>
+</rss>

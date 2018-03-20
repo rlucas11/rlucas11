@@ -2,75 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Desk Reject</title>
-    <link>http://deskreject.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on The Desk Reject</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://deskreject.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Context</title>
-      <link>http://deskreject.com/tags/context/</link>
+      <link>/tags/context/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/context/</guid>
+      <guid>/tags/context/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Expertise</title>
-      <link>http://deskreject.com/tags/expertise/</link>
+      <link>/tags/expertise/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/expertise/</guid>
+      <guid>/tags/expertise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Happiness</title>
+      <link>/tags/happiness/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/happiness/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manipulation Checks</title>
-      <link>http://deskreject.com/tags/manipulation-checks/</link>
+      <link>/tags/manipulation-checks/</link>
       <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/manipulation-checks/</guid>
+      <guid>/tags/manipulation-checks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Replicability</title>
-      <link>http://deskreject.com/tags/replicability/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/replicability/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/replicability/</guid>
+      <guid>/tags/replicability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Replications</title>
-      <link>http://deskreject.com/tags/replications/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <link>/tags/replications/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/replications/</guid>
+      <guid>/tags/replications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reputations</title>
-      <link>http://deskreject.com/tags/reputations/</link>
+      <link>/tags/reputations/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/reputations/</guid>
+      <guid>/tags/reputations/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theory</title>
-      <link>http://deskreject.com/tags/theory/</link>
+      <link>/tags/theory/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/tags/theory/</guid>
+      <guid>/tags/theory/</guid>
       <description></description>
     </item>
     

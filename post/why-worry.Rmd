@@ -8,7 +8,7 @@ tags:
   - Replications
   - Replicability
   - Theory
-bibliography: "~/Dropbox/MyLibraryZ2.bib"
+bibliography: "/home/rich/Dropbox/MyLibraryZ2.bib"
 link-citations: yes
 metaAlignment: center
 thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/c_crop,e_art:peacock,g_north_east,h_420,q_80,w_420,x_74/v1501173097/fight_j4trqx.jpg

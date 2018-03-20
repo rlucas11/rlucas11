@@ -3,103 +3,120 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</loc>
+    <loc>/2018/03/happiness-research-during-the-replication-crisis/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/09/yes-your-field-does-need-to-worry-about-replicability/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://deskreject.com/2017/06/w.w.p.m.d/</loc>
+    <loc>/2017/06/w.w.p.m.d/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://deskreject.com/2017/05/the-rules-of-replication-part-ii/</loc>
+    <loc>/2017/05/the-rules-of-replication-part-ii/</loc>
     <lastmod>2017-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://deskreject.com/2017/05/the-rules-of-replication/</loc>
+    <loc>/2017/05/the-rules-of-replication/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://deskreject.com/archives/</loc>
+    <loc>/archives/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/context/</loc>
+    <loc>/tags/context/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/expertise/</loc>
+    <loc>/tags/expertise/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/categories/improving-psychology/</loc>
+    <loc>/tags/happiness/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/happiness/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/improving-psychology/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/manipulation-checks/</loc>
+    <loc>/tags/manipulation-checks/</loc>
     <lastmod>2017-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/post/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/replicability/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <loc>/tags/replicability/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/replications/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <loc>/tags/replications/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/categories/replications/</loc>
+    <loc>/categories/replications/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/reputations/</loc>
+    <loc>/tags/reputations/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://deskreject.com/tags/theory/</loc>
+    <loc>/tags/theory/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

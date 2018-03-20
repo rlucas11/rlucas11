@@ -7,7 +7,7 @@ categories:
 tags: 
   - Replications
   - Manipulation Checks
-bibliography: "~/Dropbox/MyLibraryZ2.bib"
+bibliography: "/home/rich/Dropbox/MyLibraryZ2.bib"
 link-citations: yes
 thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_30/v1496179892/ceceCouchEdit2_g1geql.jpg
 thumbnailImagePosition: left

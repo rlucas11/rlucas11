@@ -7,7 +7,7 @@ categories:
 tags: 
   - Replications
   - Reputations
-bibliography: "~/Dropbox/MyLibraryZ2.bib"
+bibliography: "/home/rich/Dropbox/MyLibraryZ2.bib"
 link-citations: yes
 thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_10/v1493596079/profCarly_paf58m.jpg
 thumbnailImagePosition: left

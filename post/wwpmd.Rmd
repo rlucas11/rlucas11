@@ -8,7 +8,7 @@ tags:
   - Replications
   - Context
   - Expertise
-bibliography: "~/Dropbox/MyLibraryZ2.bib"
+bibliography: "/home/rich/Dropbox/MyLibraryZ2.bib"
 link-citations: yes
 metaAlignment: center
 thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/c_crop,g_north_west,h_340,q_80,w_340,y_60/v1496180809/abby2_zv6t6g.jpg

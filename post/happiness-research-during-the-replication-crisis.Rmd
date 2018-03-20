@@ -1,0 +1,20 @@
+---
+title: "Happiness Research During the Replication Crisis"
+author: "Richard E. Lucas"
+date: 2018-03-20
+categories: 
+  - Happiness
+tags: 
+  - Replications
+  - Replicability
+  - Happiness
+metaAlignment: center
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/q_40/v1521555360/cece_kqr6j0.jpg
+thumbnailImagePosition: left
+description: "In honor of International Day of Happiness, I'm posting my SPSP talk from a few weeks ago, where I discuss happiness research during the replication crisis. I talk about some good things about happiness research, and also some things that could be improved. But more importantly, I brag about my seventh grade awards, talk about the type of happiness research that I'm most skeptical about, praise some data thugs, and tell the story of how we became replication bullies."
+draft: false
+---
+
+In honor of International Day of Happiness, I'm posting my SPSP talk from a few weeks ago, where I discuss happiness research during the replication crisis. I talk about some good things about happiness research, and also some things that could be improved. But more importantly, I brag about my seventh grade awards, talk about the type of happiness research that I'm most skeptical about, praise data thugs, and tell the story of how we became replication bullies.
+<br><br>
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/811482/sp/81148200/embedIframeJs/uiconf_id/27551951/partner_id/811482?iframeembed=true&playerId=kaltura_player&entry_id=1_z00wq5an&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=1_ncwzdd12" width="640" height="396" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" title="Kaltura Player"></iframe>
