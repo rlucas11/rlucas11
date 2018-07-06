@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://deskreject.com/2018/07/harping/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</loc>
     <lastmod>2018-03-20T00:00:00+00:00</lastmod>
   </url>
@@ -75,7 +80,7 @@
   
   <url>
     <loc>http://deskreject.com/post/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -87,13 +92,13 @@
   
   <url>
     <loc>http://deskreject.com/categories/replications/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://deskreject.com/tags/replications/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,7 +116,7 @@
   
   <url>
     <loc>http://deskreject.com/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

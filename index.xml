@@ -6,10 +6,20 @@
     <description>Recent content on The Desk Reject</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://deskreject.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HARPing: Hedging After a Replication is Proposed</title>
+      <link>http://deskreject.com/2018/07/harping/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://deskreject.com/2018/07/harping/</guid>
+      <description>Remember the early days of the replication crisis? The first few high profile attempts to replicate famous psychological findings were not always embraced by the original authors (to put it mildly). Original authors (and their defenders) often resorted to name calling (even in blogs!) and other attacks that would prompt any self-respecting member of the tone police to write a scathing admonishment in a society-sponsored newsletter.1
+Fortunately, those responses have softened over time.</description>
+    </item>
     
     <item>
       <title>Happiness Research During the Replication Crisis</title>

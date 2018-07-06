@@ -1,0 +1,44 @@
+---
+title: The Evolution of Responses to Failed Replications
+author: Richard E. Lucas
+date: '2018-07-01'
+slug: evolution-of-responses
+categories:
+  - Replications
+tags:
+  - Replications
+bibliography: "/home/rich/Dropbox/MyLibraryZ2.bib"
+link-citations: yes
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_30/v1496179892/ceceCouchEdit2_g1geql.jpg
+thumbnailImagePosition: left
+draft: true
+---
+
+Who remembers the early days of the replication crisis? The first few high profile attempts to replicate famous psychological findings were not always embraced by the original authors (to put it mildly). Original authors (and their defenders) often resorted to name calling (even in [blogs](http://blogs.discovermagazine.com/neuroskeptic/2012/11/02/john-barghs-transient-and-ephemeral-blogs/#.WzyDIVQzraF)!) and other attacks that would prompt any self-respecting member of the tone police to write a scathing admonishment in a society-sponsored newsletter.[^*]
+
+Fortunately, those responses changed over time.[^1] Whereas in those early years, replicators could expect their motivations or methodological skills to be questioned, more recent responses have typically been much more gracious. Many original authors have actively engaged with replication attempts, and some have even publicly acknowledged that they no longer believe their published effects after replication studies came back with null [results](https://twitter.com/minzlicht/status/1014251435154800640). We're all learning how to talk about scientific evidence when people are personally invested in that evidence, and this is heartening progress. 
+
+Yet, sometimes I worry that this evolution in the response to failed replication has not gone far enough. For example, at this year's meeting of the Association for Psychological Science, there was a session presenting the results from three registered replication reports---multi-lab efforts to conduct carefully planned, pre-registered replications of previously published studies. If you've been paying attention, you can probably guess the outcome: All three studies failed to replicate the original results. 
+
+That's fine; we now know more about the original effects than we previously did. The original researchers who helped out with these studies made an important contribution to knowledge and should be praised for their efforts. One of the original authors even participated in the session and said all the right things: He appreciated the effort, thought it was a high quality study, and he said that he no longer believed the original effect. Although I personally don't believe that one should be embarrassed if one's previously published effects turn out to be wrong, I understand that people have attachment to their published findings, and I know it can be hard to admit when the results from a study do not hold up. Kudos to anyone who is able to do so. 
+
+At the same time, in defending the original idea, the author said that he and his colleagues had actually expected the replication attempt to fail, because they thought that the specific study that was chosen was the weakest in the multiple study package in which it was published. An audience member asked whether the author and his colleagues had made that prediction before seeing the results, and he replied that they had. 
+
+Now, we are all sensitized to the fact that you're not supposed to "HARK"---it is problematic to hypothesize after results are known. Once we know how things have turned out, it is easy to come up a *post hoc* explanation as to why it happened that way. This is why preregistration and registered reports are so valuable. So hearing that someone had concerns about a particular replication effort *before* the results were known often sounds like good evidence that the effort itself was somehow misguided. But I think that this heuristic ignores a closely related problem to HARKing, the tendency to **HARP**, or to **Hedge After a Replication is Proposed**. Once a study has been selected for replication, original authors often seem suddenly skeptical about the importance or quality of the study that has been chosen for replication.
+
+Why does this matter? In the case of authors who disavow the methods of a study that they had previously endorsed, maybe it doesn't seem like that big of a deal. Why should we care if an original author suggests that a particular study wasn't especially strong or especially likely to replicate? The reason it is important is that our confidence in a theory or our belief in the existence of a phenomenon are supposed to be informed by empirical evidence, and our confidence and belief should be changed when new evidence comes in. If the author believed the evidence was important enough to be included in a paper, then they've made a commitment to the idea that the evidence that that study provides bears on the validity of the theory or phenomenon. When we accept people's *harping* about original studies that are subjected to replication attempts, we are letting them off the hook for this commitment. 
+
+But there's an even bigger problem with *harping* that is especially likely to come up when new replication studies are proposed. That is, specific study features that were plenty good enough to get these studies published the first time around suddenly become problematic when incorporated into a replication study. For example, my colleagues and I had a replication study rejected from the same journal in which the original study had been published when the original author reviewed our paper and criticized a critical design feature *that was included in the original study!* On other another occasion, we had a lengthy e-mail discussion with an author about how to replicate one of his previous studies; and although he was more than willing to tell us the specific ways our replication attempt could go wrong, he was never willing to say how we could get it right. In short, he was hedging so strongly about the original study that one could never challenge the original result. 
+
+I also see this all the time when reviewing or editing registered reports. In many cases, although the original authors can be incredibly engaged and helpful, they can also be quite critical of design features that could not have been considered very carefully during the planning of the original study. And because they are doing it without seeing the results (i.e., they can't be *harking*), we may give them more benefit of the doubt than is warranted. But I think that harping can lead to the same hindsight-like biases that harking does, and therefore is potentially just as problematic. 
+
+What can we do to prevent harping? First, the push for better reporting in original studies will help. Open materials and data, along with better, more transparent descriptions of methods and measures will certainly reduce the flexibility that is required to harp. Furthermore, clear statements about any constraints on generality [@simons_constraints_2017] in original papers will force original authors to distinguish between the features of a study that are essential for the results to emerge, versus those that are theoretically irrelevant and that can be changed without consequence. 
+
+In addition, we, as reviewers and editors, have to be on the lookout for the effects of harping. Although we should absolutely give original authors who serve as reviewers of proposed replication reports the benefit of the doubt that they are genuinely trying to be helpful and to improve the quality of the final study design, we shouldn't be so naive as to think that doing all this before the results are known eliminates all cognitive biases. *Harping* can still occur before *harking* is even possible. Personally, my strategy when editing such submissions is to consider very carefully whether any complaints about deviations from original protocols follow clearly from the arguments made in the original work (or from new studies that have emerged in the intervening time) as opposed to *post hoc* explanations of how the differences that will inevitably occur could potentially lead to different results. 
+
+[need some ending]
+
+# References
+
+[^*]: Sorry, would link to one from back then, but I'm having trouble locating any.
+[^1]: Fuck, spoke too [soon](https://twitter.com/psforscher/status/1013812139931336704). 

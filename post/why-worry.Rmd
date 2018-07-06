@@ -25,12 +25,8 @@ Of course, many of the solutions that have been proposed come with some cost: In
 
 For instance, after Hal Pashler and J.P. de Ruiter's recent [column](https://www.psychologicalscience.org/observer/taking-responsibility-for-our-fields-reputation) in the *APS Observer* about how psychology can bolster its credibility, Pashler noted that he had received complaints from friends in cognitive psychology who argued that no changes in that field were needed because everything was already fine: 
 
-<br>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">“No big replic problem in cognitive…so why must our work considered suspect? You think need a PRR before we can believe in PRP, Hal?”  2/2</p>&mdash; Hal Pashler (@hpashler) <a href="https://twitter.com/hpashler/status/904358341492654080">September 3, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;No big replic problem in cognitive…so why must our work considered suspect? You think need a PRR before we can believe in PRP, Hal&quot;  2/2</p>&mdash; Hal Pashler (@hpashler) <a href="https://twitter.com/hpashler/status/904358341492654080">September 3, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<br>
 
 The idea that replicability is only problem for some fields of psychology is an important one to address, because it has implications for how new policies are adopted and implemented. For instance, if problems with replicability are limited to certain subdisciplines, then broad changes at funding agencies or cross-disciplinary journals would not be needed. Instead, policies could target just those areas where the problems are most likely to occur. In addition, those who fail to see a problem in their own discipline may not be motivated to participate in ongoing discussions about research practices, which means that valuable perspectives and opinions about best practices or the costs of certain proposals are not being heard. For these and other reasons, I think that the idea that certain subdisciplines don't need to worry about replicability is problematic. 
 
