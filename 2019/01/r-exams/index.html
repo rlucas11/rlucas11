@@ -1,0 +1,860 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.53">
+    <meta name="theme" content="Tranquilpeak 0.3.1-BETA">
+    <title>Using R to Create Multiple Choice Exams</title>
+    <meta name="author" content="Rich Lucas">
+    <meta name="keywords" content=", replicability, personality, subjective well-being">
+
+    <link rel="icon" href="http://deskreject.com/favicon.png">
+    
+
+    
+    <meta name="description" content="R/Exams is a great tool for creating multiple choice exams using R; but it takes some work to get it to do exactly what you want. In this post I describe the modifications to the default options that I made to get R/Exams to print multiple forms of my multiple-choice Intro Psych exams.">
+    <meta property="og:description" content="R/Exams is a great tool for creating multiple choice exams using R; but it takes some work to get it to do exactly what you want. In this post I describe the modifications to the default options that I made to get R/Exams to print multiple forms of my multiple-choice Intro Psych exams.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Using R to Create Multiple Choice Exams">
+    <meta property="og:url" content="/2019/01/r-exams/">
+    <meta property="og:site_name" content="The Desk Reject">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Desk Reject">
+    <meta name="twitter:description" content="R/Exams is a great tool for creating multiple choice exams using R; but it takes some work to get it to do exactly what you want. In this post I describe the modifications to the default options that I made to get R/Exams to print multiple forms of my multiple-choice Intro Psych exams.">
+    
+      <meta name="twitter:creator" content="@rlucas11">
+    
+    
+
+    
+    
+
+    
+	  <meta name="twitter:image" content="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richShark_vjasjc.jpg">
+	  <meta property="og:image" content="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richShark_vjasjc.jpg">
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    
+    
+    <link rel="stylesheet" href="http://deskreject.com/css/style-u6mk0ojoywresbx8iepslrmmhl4stuhrsxuwhkpwrkrx7mryjcaimasnk4pi.min.css" />
+    
+    
+      <link rel="stylesheet" href="http://deskreject.com#ZgotmplZ">
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-97837797-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://deskreject.com/">The Desk Reject</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://www.msu.edu/user/lucasri/" target="_blank">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/88a2c19a6a40fe056a2236c1cfaf390f?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="http://deskreject.com/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/88a2c19a6a40fe056a2236c1cfaf390f?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Rich Lucas</h4>
+        
+          <h5 class="sidebar-profile-bio">Personality psychologist in the Department of Psychology at Michigan State University. Interested in personality and well-being, measurement, and replicability.</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://deskreject.com/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://deskreject.com/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://deskreject.com/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://deskreject.com/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://deskreject.com/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/rlucas11" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/rlucas11" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://deskreject.com/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Using R to Create Multiple Choice Exams
+    </h1>
+  
+  <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2019-01-19T00:00:00Z">
+      
+  January 19, 2019
+
+    </time>
+  
+  
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="http://deskreject.com/categories/teaching">Teaching</a>
+    
+  
+
+
+</div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<p>About ten years ago, I made one of the best work-related decisions I&rsquo;ve ever made: Switching from Windows (and SPPS) to linux (and R). Not having to deal with the endless load times of SPSS or the inevitable Windows slowdowns that make you think, after six months of use, that you need a new computer&mdash;plus all the unfixable bugs, unexplainable crashes, and generally strange behavior&mdash;has done more for my blood pressure than any medication or change in diet ever could. And linux support for many different programs has improved so that finding linux versions of things you need is kind of like finding vegetarian food in the Midwest: Although I still go into restaurants expecting that the vegetarian option will just be a salad where they leave off the ham, most of the time you can find something that is actually pretty good. This has made my life better.</p>
+
+<p><br>
+<table>
+<tr>
+<td>
+<div class="figure">
+<img src="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richShark_vjasjc.jpg" style="width:400px;"/>
+<p class="caption">Me in 2009. With Windows.</p>
+</div>
+</td>
+<td>
+<div class="figure">
+<img src="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richLlama_nvtsgb.jpg" style="width:400px;"/>
+<p class="caption">Me in 2019. With linux.</p>
+</div>
+</td>
+</tr>
+</table></p>
+
+<p>But it is true that for some things, there are simply no linux alternatives. Tax software, for instance. And until recently, I was stuck using my Windows virtual machine so I could run the software that I used to create multiple-choice exams for my large Intro Psych class (software provided by the textbook that I <em>used to use</em> before switching to the excellent, and free-for-students <a href="https://nobaproject.com/">Noba Project</a> text).</p>
+
+<p>Because using a Windows virtual machine is also pretty frustrating, this year I searched for an alternative, assuming that <em>someone</em> must have made a package for R that could do this. This led me to <em>R/Exams</em>.</p>
+
+<h1 id="r-exams">R/Exams</h1>
+
+<p><em><a href="http://www.r-exams.org/">R/Exams</a></em> is an R package that can be used to create paper-based and on-line exams. It can select items from a pool and randomize the order of those questions for presentation to students. It can also format them so that you can use the questions in on-line course management systems. It&rsquo;s a really nice package that does a lot of things well. However, I found the default settings to be less than ideal for the types of exams I give. For instance, many of the default settings assume that each respondent will receive a unique exam form and will respond to that exam with an answer sheet created by the <em>R/Exams</em> package. But I want to take advantage of my university&rsquo;s scoring office, which means that I need a small number of forms with corresponding scoring keys that can be used by the scoring office. The documentation about how to change these settings is not always clear (though the package authors are very responsive at the <a href="https://r-forge.r-project.org/forum/forum.php?forum_id=4377">support forum</a>); and changing the output often requires editing LaTeX templates. Because I think that many people might want to use <em>R/Exams</em> the same way that I do, I thought it might be helpful to write about the changes I needed to make when using <em>R/Exams</em> in my class. I am certainly not an expert on the intricacies of the package (or on LaTeX), so I&rsquo;d love to hear suggestions about better ways to do this in the comments.</p>
+
+<p><em>R/Exams</em> has a lot of functionality that I don&rsquo;t really need. The main purpose that I have for it is to create multiple pdf versions of the same set of questions for my very large Intro Psych class. So I primarily rely on a function that does exactly that. That function is <code>exams2pdf()</code>. Once you&rsquo;ve created a set of questions (each in its own file, either in Rmarkdown or Sweave format; see <a href="http://www.r-exams.org/templates/">here</a>), you can construct an exam like this:</p>
+
+<pre><code>### Load package
+library(exams)
+
+### Create an exam, in this case from the example items that come with the package
+myexam &lt;- list(
+  &quot;tstat2.Rnw&quot;,
+  &quot;ttest.Rnw&quot;,
+  &quot;relfreq.Rnw&quot;,
+  &quot;anova.Rnw&quot;,
+  &quot;cholesky.Rnw&quot;
+)
+
+### Print the exam to pdf
+examPdf &lt;- exams2pdf(myexam, n = 2, name = &quot;exam&quot;)
+
+</code></pre>
+
+<p>This will create two pdf files (labeled &ldquo;exam1.pdf&rdquo; and &ldquo;exam2.pdf&rdquo;) each with the five questions listed above. However, the first thing you&rsquo;ll notice is that these two versions have the exact same order of questions, which is not what I expected. What this command does do nicely is actually change the numbers in the math-based problems; so the questions and answers are actually different for different students (no cheating!). This is a great feature, but one that I won&rsquo;t use, given the types of questions I use in Intro Psych. To get <em>Exams</em> to randomize the order of the questions, you kind of have to trick it, using an option that is meant to randomly select a subset of questions from a broader pool. The code below does just that (notice the added <code>c()</code> around the items, and the <code>nsamp</code> option in the call to <code>exams2pdf</code>):</p>
+
+<pre><code>### Create an exam in a way that order can be randomized
+myexam &lt;- list(c(
+  &quot;tstat2.Rnw&quot;,
+  &quot;ttest.Rnw&quot;,
+  &quot;relfreq.Rnw&quot;,
+  &quot;anova.Rnw&quot;,
+  &quot;cholesky.Rnw&quot;
+))
+
+### Print the exam to pdf
+examPdf &lt;- exams2pdf(myexam, nsamp = 5, n = 2, name = &quot;exam&quot;)
+
+</code></pre>
+
+<p>Now if you look at the files that were created, you will see that the order is randomized. By the way, if you wanted to randomly select a certain number of questions from a larger pool of items, you could change the <code>nsamp</code> option to some number less than the total number you included in the <code>list</code> statement. So the following would get you two different exams, made up of three questions selected from the five that you listed in <code>myexam</code>.</p>
+
+<pre><code>### Randomly select 3 items and print the exam to pdf
+examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
+
+</code></pre>
+
+<p>Note that if you use this option to select from a larger pool, the questions that are included on each exam will be different; I&rsquo;m not sure how to randomly select the same set of questions from a pool and then randomize that set across two different forms.</p>
+
+<p>So this is a good first step, but it still was not what I needed. First (and most importantly), you&rsquo;ll see that the pdf that is printed actually has the <em>solutions</em> alongside the questions. Not good if these are the forms you actually want students to use when taking the exams! In addition, I want to be able to change the formatting to use smaller margins, different font, and to not have the title &ldquo;Problem&rdquo; before each individual question (if I&rsquo;m carrying 500 exams across campus, I want these questions to fit on as few pages as possible).</p>
+
+<p><br>
+<div class="figure">
+<img src="https://res.cloudinary.com/demy2onqi/image/upload/q_auto:good/v1547840275/boxes-01_tmow5d.jpg" style="width:50%; margin:auto;"/>
+<p class="caption">The many, many boxes of exams I have carried across campus.</p>
+</div></p>
+
+<p>I think that <code>exams2pdf()</code> was actually designed to print a version of the exam that included solutions for students to use <em>after</em> they completed the exam. <em>R/Exams</em> also has a function called <code>exams2nops()</code> that does much of what <code>exams2pdf()</code> does, but without solutions. You can try it by running the following code:</p>
+
+<pre><code>examNops &lt;- exams2nops(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
+</code></pre>
+
+<p>Now you will get something that might be closer to what you want, as the solutions aren&rsquo;t printed. But you also get an answer sheet that students can use to actually record their responses (which I don&rsquo;t need, given that I am using the university&rsquo;s scantrons). In addition, I would actually like to be able to have this function print out a list of answers that I can give to my TAs to use when creating the scoring key for our scoring office.</p>
+
+<h1 id="modifying-r-exams-defaults">Modifying R/Exams Defaults</h1>
+
+<p>So to get exactly what I wanted, I needed to modify the template that is used by <em>R/Exams</em> when creating this output. This template needs to be in the &ldquo;tex&rdquo; directory of the package directory (which will differ depending your system). You can find my modified template file <a href="https://github.com/rlucas11/rexams/blob/master/myexam2.tex">here</a>.</p>
+
+<p>I started with the provided &ldquo;exam.tex&rdquo; template and then made a couple changes (most of which were suggested on the support forums, some of which I figured out on my own<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>). First, I changed the font-size to 10pt in the opening line:</p>
+
+<pre><code>\documentclass[10pt]{article}
+</code></pre>
+
+<p>In addition, I used the <em>geometry</em> package to change margins:</p>
+
+<pre><code>\usepackage[left=.5in, right=.5in, top=.5in, bottom=.75in]{geometry}
+</code></pre>
+
+<p>Third, I changed the answerlist environment to prevent answer lists from spanning multiple pages:</p>
+
+<pre><code>\newenvironment{answerlist}{\renewcommand{\labelenumi}{(\alph{enumi})}\begin{samepage}\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]}{\end{enumerate}\end{samepage}}
+</code></pre>
+
+<p>Next, I wanted to use the answer sheet as a scoring sheet (i.e., something that shows a list of correct answers). So I changed this line:</p>
+
+<pre><code>\newcommand{\extext}[1]{\phantom{\large #1}}
+</code></pre>
+
+<p>to this one:</p>
+
+<pre><code>\newcommand{\extext}[1]{\textbf{\large #1}}
+</code></pre>
+
+<p>This now shows the correct answer for each question.</p>
+
+<p>In addition, at the end of the template, I changed the order of the &ldquo;exercises&rdquo; (all the individual questions) relative to the &ldquo;questionnaire&rdquo; (which is the answer sheet, or as I am using it, the list of correct answers). This prints the answers at the end of the pdf, and I can just remove those pages when sending the exam to the printer. So now in my template, the line</p>
+
+<pre><code>%% \exinput{questionnaire}
+</code></pre>
+
+<p>comes right before the end of the document. I also made some modifications to the title page. I actually don&rsquo;t use the title page (I replace it with one I&rsquo;ve used for other exams), but I could probably just modify this one to make it work for my purposes.</p>
+
+<p>So now the final command that I run to get the exams, formatted the way I want them is:</p>
+
+<pre><code class="language-r">finalExam &lt;- exams2pdf(myexam, n = 2, nsamp = 5, name = &quot;finalExam&quot;, template=&quot;myexam2&quot;)
+</code></pre>
+
+<p>This produces two formatted pdf files, each with the same questions in different orders, and each with a list of answers appended to the end (careful not to copy those last pages in the version you distribute to students). Add the type of title page you want, and they&rsquo;re ready for the printer!</p>
+
+<h1 id="an-r-exams-workflow">An R/Exams Workflow</h1>
+
+<p>Switching to <em>R/Exams</em> (from &ldquo;cut and paste&rdquo; or from using some other software) does require some additional changes to your workflow. Each exam question is stored in its own .Rnw or .Rmd file (I use .Rmd), so you need to rewrite your questions in this format. Personally, I organize sets of questions in separate directories by content area, and then select the questions that I want and add them to the list in &ldquo;myexam&rdquo; from the code above. Taking old exam questions and putting them into Rmarkdown format takes a little bit of time, but I think in the long run it will be worth it. Now I don&rsquo;t have to rely on proprietary (and clunky, and soon-to-be-unusuable) software to create nicely formatted exams from an existing pool of questions.</p>
+
+<p>There are a couple of things I&rsquo;d love to change, but I don&rsquo;t have the expertise that is required. First, I&rsquo;d like to have the answer lists formatted as two columns when all the responses are less than a half a line long and as one column otherwise; but I don&rsquo;t know enough about LaTeX to do that (and nobody could answer my question on twitter). Second, I&rsquo;d like to figure out how to randomly select questions from a pool <em>and</em> to create multiple versions with different orders but that use these same questions. I can&rsquo;t figure out how to get <em>R/Exams</em> to do both. It would also be pretty amazing to develop a converter that could take questions from course management software and output them to individual Rmd files; but that is certainly beyond my abilities. So if anyone has solutions to those issues, let me know!</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">I&rsquo;m also doing this from memory, so I hope I haven&rsquo;t forgotten any of the important changes I made.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/teaching/">Teaching</a>
+
+  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/rstats/">rstats</a>
+
+  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/r/exams/">R/Exams</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2018/07/harping/" data-tooltip="HARPing: Hedging After a Replication is Proposed">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Rich Lucas. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2018/07/harping/" data-tooltip="HARPing: Hedging After a Replication is Proposed">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/88a2c19a6a40fe056a2236c1cfaf390f?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Rich Lucas</h4>
+    
+      <div id="about-card-bio">Personality psychologist in the Department of Psychology at Michigan State University. Interested in personality and well-being, measurement, and replicability.</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Professor
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        United States
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2019/01/r-exams/">
+                <h3 class="media-heading">Using R to Create Multiple Choice Exams</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">About ten years ago, I made one of the best work-related decisions I&rsquo;ve ever made: Switching from Windows (and SPPS) to linux (and R). Not having to deal with the endless load times of SPSS or the inevitable Windows slowdowns that make you think, after six months of use, that you need a new computer&mdash;plus all the unfixable bugs, unexplainable crashes, and generally strange behavior&mdash;has done more for my blood pressure than any medication or change in diet ever could.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2018/07/harping/">
+                <h3 class="media-heading">HARPing: Hedging After a Replication is Proposed</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Remember the early days of the replication crisis? The first few high profile attempts to replicate famous psychological findings were not always embraced by the original authors (to put it mildly). Original authors (and their defenders) often resorted to name calling (even in blogs!) and other attacks that would prompt any self-respecting member of the tone police to write a scathing admonishment in a society-sponsored newsletter.1
+Fortunately, those responses have softened over time.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/">
+                <h3 class="media-heading">Happiness Research During the Replication Crisis</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">In honor of International Day of Happiness, I’m posting my SPSP talk from a few weeks ago, where I discuss happiness research during the replication crisis. I talk about some good things about happiness research, and also some things that could be improved. But more importantly, I brag about my seventh grade awards, talk about the type of happiness research that I’m most skeptical about, praise data thugs, and tell the story of how we became replication bullies.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/">
+                <h3 class="media-heading">Yes, Your Field Does Need to Worry About Replicability</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">One of the most exciting things to happen during the years-long debate about the replicability of psychological research is the shift in focus from providing evidence that there is a problem to developing concrete plans for solving those problems. Whether it is journal badges that reward good practices, statistical software that can check for problems before papers are published, collaborative efforts to deal with limited resources and underpowered studies, proposals for new standards of evidence, or even entire societies dedicated to figuring out what we can do to make thing better, many people have devoted an incredible amount of thought, time, and energy to figuring out how we can fix any problems that exist and move the field forward.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2017/06/w.w.p.m.d/">
+                <h3 class="media-heading">W.W.P.M.D?</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jun 6, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">One of the most contentious issues in recent debates about replication studies concerns the importance of context in explaining failed replications. Those who question the value of direct replication often suggest that many psychological effects should be expected not to replicate because they depend so strongly on a multitude of seemingly inconsequential contextual factors. Thus, because you can’t step in the same river twice, direct replication attempts should often be expected to fail.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2017/05/the-rules-of-replication-part-ii/">
+                <h3 class="media-heading">The Rules of Replication: Part II</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Cece doesn’t understand the rules of the couch.  Do replication studies need special rules? In my previous post I focused on the question of whether replicators need to work with original authors when conducting their replication studies. I argued that this rule is based on the problematic idea that original authors somehow own an effect and that their reputations will be harmed if that effect turns out to be fragile or to have been a false positive.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/2017/05/the-rules-of-replication/">
+                <h3 class="media-heading">The Rules of Replication</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Recently I traveled to Vienna for APS’s International Convention on Psychological Science, where I gave a talk on “The Rules of Replication.” Thanks to the other great talks in the session, it was well attended. But as anyone who goes to academic conferences knows, “well attended” typically means that at best, there may have been a couple hundred people in the room. And it seems like kind of a waste to prepare a talk—one that I will probably only give once—for such a limited audience.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="http://deskreject.com/post/">
+                <h3 class="media-heading">Posts</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         8 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://deskreject.com/images/hawaiiBlur2.jpg');"></div>
+  
+
+
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+
+
+<script src="http://deskreject.com/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'http:\/\/deskreject.com\/2019\/01\/r-exams\/';
+          
+            this.page.identifier = '\/2019\/01\/r-exams\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'rlucas11';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+
+    
+  </body>
+</html>
+

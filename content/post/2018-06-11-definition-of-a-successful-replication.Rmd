@@ -1,0 +1,25 @@
+---
+title: Why I Don't Worry About the Definition of a Successful Replication
+author: Richard E. Lucas
+date: '2018-06-11'
+slug: definition-of-a-successful-replication
+categories:
+  - Replications
+tags:
+  - Replications
+link-citations: yes
+thumbnailImage: http://res.cloudinary.com/demy2onqi/image/upload/g_center,q_30/v1496179892/ceceCouchEdit2_g1geql.jpg
+thumbnailImagePosition: left
+description: "How should we deal with failed manipulation checks in replication studies?"
+---
+
+
+Criterion                             1        2        3        4        5        6        7        8        9
+--------------------------------  -------- -------- -------- -------- -------- -------- -------- -------- --------
+Significant                       &#x2714; &#x274C; &#x2714; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C;
+Inside CI of Original             &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C;
+Original Iside CI of Replication  &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; 
+Small Telescopes                  &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C;
+Standard Bayes                    &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; 
+Replication Bayes                 &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C;
+Equivalence Test                  &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C; &#x274C;
