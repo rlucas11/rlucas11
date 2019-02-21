@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://deskreject.com/2019/02/how-to-measure-happiness/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://deskreject.com/2019/01/r-exams/</loc>
     <lastmod>2019-01-19T00:00:00+00:00</lastmod>
   </url>
@@ -61,13 +66,13 @@
   
   <url>
     <loc>http://deskreject.com/tags/happiness/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://deskreject.com/categories/happiness/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -84,8 +89,14 @@
   </url>
   
   <url>
+    <loc>http://deskreject.com/tags/measurement/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://deskreject.com/post/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -126,6 +137,12 @@
   </url>
   
   <url>
+    <loc>http://deskreject.com/tags/self-report/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://deskreject.com/tags/</loc>
     <lastmod>2017-06-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -145,7 +162,7 @@
   
   <url>
     <loc>http://deskreject.com/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

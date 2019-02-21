@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.53">
     <meta name="theme" content="Tranquilpeak 0.3.1-BETA">
-    <title>Using R to Create Multiple Choice Exams</title>
+    <title>How to Measure Happiness</title>
     <meta name="author" content="Rich Lucas">
     <meta name="keywords" content=", replicability, personality, subjective well-being">
 
@@ -31,15 +31,15 @@
     
 
     
-    <meta name="description" content="R/Exams is a great tool for creating multiple choice exams using R; but it takes some work to get it to do exactly what you want. In this post I describe the modifications to the default options that I made to get R/Exams to print multiple forms of my multiple-choice Intro Psych exams.">
-    <meta property="og:description" content="R/Exams is a great tool for creating multiple choice exams using R; but it takes some work to get it to do exactly what you want. In this post I describe the modifications to the default options that I made to get R/Exams to print multiple forms of my multiple-choice Intro Psych exams.">
+    <meta name="description" content="The limitations of global, self-report measures of happiness are obvious. But sometimes, researchers fail to ask whether the alternative measures that have been proposed to address these limitations come with their own psychometric challenges. In this post, I describe a recent paper that compares two experiential measures of well-being: the Day Reconstruction Method and the Experience Sampling Method. This comparison raises some concerns about experiential approaches.">
+    <meta property="og:description" content="The limitations of global, self-report measures of happiness are obvious. But sometimes, researchers fail to ask whether the alternative measures that have been proposed to address these limitations come with their own psychometric challenges. In this post, I describe a recent paper that compares two experiential measures of well-being: the Day Reconstruction Method and the Experience Sampling Method. This comparison raises some concerns about experiential approaches.">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Using R to Create Multiple Choice Exams">
-    <meta property="og:url" content="/2019/01/r-exams/">
+    <meta property="og:title" content="How to Measure Happiness">
+    <meta property="og:url" content="/2019/02/how-to-measure-happiness/">
     <meta property="og:site_name" content="The Desk Reject">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="The Desk Reject">
-    <meta name="twitter:description" content="R/Exams is a great tool for creating multiple choice exams using R; but it takes some work to get it to do exactly what you want. In this post I describe the modifications to the default options that I made to get R/Exams to print multiple forms of my multiple-choice Intro Psych exams.">
+    <meta name="twitter:description" content="The limitations of global, self-report measures of happiness are obvious. But sometimes, researchers fail to ask whether the alternative measures that have been proposed to address these limitations come with their own psychometric challenges. In this post, I describe a recent paper that compares two experiential measures of well-being: the Day Reconstruction Method and the Experience Sampling Method. This comparison raises some concerns about experiential approaches.">
     
       <meta name="twitter:creator" content="@rlucas11">
     
@@ -49,8 +49,8 @@
     
 
     
-	  <meta name="twitter:image" content="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richShark_vjasjc.jpg">
-	  <meta property="og:image" content="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richShark_vjasjc.jpg">
+	  <meta name="twitter:image" content="https://res.cloudinary.com/demy2onqi/image/upload/v1548966518/happyCece_aqomda.jpg">
+	  <meta property="og:image" content="https://res.cloudinary.com/demy2onqi/image/upload/v1548966518/happyCece_aqomda.jpg">
     
     
     
@@ -227,14 +227,14 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Using R to Create Multiple Choice Exams
+      How to Measure Happiness
     </h1>
   
   <div class="postShorten-meta post-meta">
   
-    <time itemprop="datePublished" datetime="2019-01-19T00:00:00Z">
+    <time itemprop="datePublished" datetime="2019-02-21T00:00:00Z">
       
-  January 19, 2019
+  February 21, 2019
 
     </time>
   
@@ -243,7 +243,7 @@ if (!doNotTrack) {
   
     <span>in</span>
     
-      <a class="category-link" href="http://deskreject.com/categories/teaching">Teaching</a>
+      <a class="category-link" href="http://deskreject.com/categories/happiness">Happiness</a>
     
   
 
@@ -256,150 +256,102 @@ if (!doNotTrack) {
             <div class="main-content-wrap">
               
 
-<p>About ten years ago, I made one of the best work-related decisions I&rsquo;ve ever made: Switching from Windows (and SPPS) to linux (and R). Not having to deal with the endless load times of SPSS or the inevitable Windows slowdowns that make you think, after six months of use, that you need a new computer&mdash;plus all the unfixable bugs, unexplainable crashes, and generally strange behavior&mdash;has done more for my blood pressure than any medication or change in diet ever could. And linux support for many different programs has improved so that finding linux versions of things you need is kind of like finding vegetarian food in the Midwest: Although I still go into restaurants expecting that the vegetarian option will just be a salad where they leave off the ham, most of the time you can find something that is actually pretty good. This has made my life better.</p>
 
-<p><br>
-<table>
-<tr>
-<td>
+<p>Anyone who has ever taught Intro Psych knows that one of the most popular lectures is the one that covers visual illusions. It’s easy to understand why. Illusions like the famous Müller-Lyer illusion shown below provide a clear example of times when our perception of the world is clearly, and demonstrably wrong. Although it’s almost impossible not to see the three lines as differing in length, simply removing the arrows at the ends shows that they are all, in fact, the same. It’s especially powerful when, as an instructor, you can explain why our sense of the world is so misleadingly wrong.
+<br></p>
 <div class="figure">
-<img src="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richShark_vjasjc.jpg" style="width:400px;"/>
-<p class="caption">Me in 2009. With Windows.</p>
+<img src="https://res.cloudinary.com/demy2onqi/image/upload/q_auto:good/v1549405434/2000px-Mu%CC%88ller-Lyer_illusion.svg_d536ou.png" style="width:80%; margin:auto;"/>
+<p class="caption">
+Fibonacci [CC BY-SA 3.0 (<a href="http://creativecommons.org/licenses/by-sa/3.0/" class="uri">http://creativecommons.org/licenses/by-sa/3.0/</a>)], from Wikimedia Commons
+</p>
 </div>
-</td>
-<td>
+<p>In happiness research, the closest thing we have to the power of these optical illusions is research that seems to show that people reliably and predictably misreport their levels of happiness. Specifically, there is a long line of research that purports to show that seemingly inconsequential events, like a sunny day or even just finding a dime on the ground, can lead to changes in happiness—changes that supposedly exceed the impact of unemployment, the onset of a disability, or winning the lottery <span class="citation">(Schwarz and Strack <a href="#ref-Schwarz1999">1999</a>)</span>. The idea is that these inconsequential events don’t really impact happiness; they just cause momentary changes in mood, and people rely on their mood as information about how happy they are with their life as a whole. Thus, the report that they provide—and perhaps even the perception of their happiness—is an illusion.
+<br>
+<br></p>
 <div class="figure">
-<img src="https://res.cloudinary.com/demy2onqi/image/upload/v1547850104/richLlama_nvtsgb.jpg" style="width:400px;"/>
-<p class="caption">Me in 2019. With linux.</p>
+<img src="https://res.cloudinary.com/demy2onqi/image/upload/q_auto:good/v1548966518/happyCece_aqomda.jpg" style="width:60%; margin:auto;"/>
+<p class="caption">
+Cece <strong>thinks</strong> she’s happy
+</p>
 </div>
-</td>
-</tr>
-</table></p>
-
-<p>But it is true that for some things, there are simply no linux alternatives. Tax software, for instance. And until recently, I was stuck using my Windows virtual machine so I could run the software that I used to create multiple-choice exams for my large Intro Psych class (software provided by the textbook that I <em>used to use</em> before switching to the excellent, and free-for-students <a href="https://nobaproject.com/">Noba Project</a> text).</p>
-
-<p>Because using a Windows virtual machine is also pretty frustrating, this year I searched for an alternative, assuming that <em>someone</em> must have made a package for R that could do this. This led me to <em>R/Exams</em>.</p>
-
-<h1 id="r-exams">R/Exams</h1>
-
-<p><em><a href="http://www.r-exams.org/">R/Exams</a></em> is an R package that can be used to create paper-based and on-line exams. It can select items from a pool and randomize the order of those questions for presentation to students. It can also format them so that you can use the questions in on-line course management systems. It&rsquo;s a really nice package that does a lot of things well. However, I found the default settings to be less than ideal for the types of exams I give. For instance, many of the default settings assume that each respondent will receive a unique exam form and will respond to that exam with an answer sheet created by the <em>R/Exams</em> package. But I want to take advantage of my university&rsquo;s scoring office, which means that I need a small number of forms with corresponding scoring keys that can be used by the scoring office. The documentation about how to change these settings is not always clear (though the package authors are very responsive at the <a href="https://r-forge.r-project.org/forum/forum.php?forum_id=4377">support forum</a>); and changing the output often requires editing LaTeX templates. Because I think that many people might want to use <em>R/Exams</em> the same way that I do, I thought it might be helpful to write about the changes I needed to make when using <em>R/Exams</em> in my class. I am certainly not an expert on the intricacies of the package (or on LaTeX), so I&rsquo;d love to hear suggestions about better ways to do this in the comments.</p>
-
-<p><em>R/Exams</em> has a lot of functionality that I don&rsquo;t really need. The main purpose that I have for it is to create multiple pdf versions of the same set of questions for my very large Intro Psych class. So I primarily rely on a function that does exactly that. That function is <code>exams2pdf()</code>. Once you&rsquo;ve created a set of questions (each in its own file, either in Rmarkdown or Sweave format; see <a href="http://www.r-exams.org/templates/">here</a>), you can construct an exam like this:</p>
-
-<pre><code>### Load package
-library(exams)
-
-### Create an exam, in this case from the example items that come with the package
-myexam &lt;- list(
-  &quot;tstat2.Rnw&quot;,
-  &quot;ttest.Rnw&quot;,
-  &quot;relfreq.Rnw&quot;,
-  &quot;anova.Rnw&quot;,
-  &quot;cholesky.Rnw&quot;
-)
-
-### Print the exam to pdf
-examPdf &lt;- exams2pdf(myexam, n = 2, name = &quot;exam&quot;)
-
-</code></pre>
-
-<p>This will create two pdf files (labeled &ldquo;exam1.pdf&rdquo; and &ldquo;exam2.pdf&rdquo;) each with the five questions listed above. However, the first thing you&rsquo;ll notice is that these two versions have the exact same order of questions, which is not what I expected. What this command does do nicely is actually change the numbers in the math-based problems; so the questions and answers are actually different for different students (no cheating!). This is a great feature, but one that I won&rsquo;t use, given the types of questions I use in Intro Psych. To get <em>Exams</em> to randomize the order of the questions, you kind of have to trick it, using an option that is meant to randomly select a subset of questions from a broader pool. The code below does just that (notice the added <code>c()</code> around the items, and the <code>nsamp</code> option in the call to <code>exams2pdf</code>):</p>
-
-<pre><code>### Create an exam in a way that order can be randomized
-myexam &lt;- list(c(
-  &quot;tstat2.Rnw&quot;,
-  &quot;ttest.Rnw&quot;,
-  &quot;relfreq.Rnw&quot;,
-  &quot;anova.Rnw&quot;,
-  &quot;cholesky.Rnw&quot;
-))
-
-### Print the exam to pdf
-examPdf &lt;- exams2pdf(myexam, nsamp = 5, n = 2, name = &quot;exam&quot;)
-
-</code></pre>
-
-<p>Now if you look at the files that were created, you will see that the order is randomized. By the way, if you wanted to randomly select a certain number of questions from a larger pool of items, you could change the <code>nsamp</code> option to some number less than the total number you included in the <code>list</code> statement. So the following would get you two different exams, made up of three questions selected from the five that you listed in <code>myexam</code>.</p>
-
-<pre><code>### Randomly select 3 items and print the exam to pdf
-examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
-
-</code></pre>
-
-<p>Note that if you use this option to select from a larger pool, the questions that are included on each exam will be different; I&rsquo;m not sure how to randomly select the same set of questions from a pool and then randomize that set across two different forms.</p>
-
-<p>So this is a good first step, but it still was not what I needed. First (and most importantly), you&rsquo;ll see that the pdf that is printed actually has the <em>solutions</em> alongside the questions. Not good if these are the forms you actually want students to use when taking the exams! In addition, I want to be able to change the formatting to use smaller margins, different font, and to not have the title &ldquo;Problem&rdquo; before each individual question (if I&rsquo;m carrying 500 exams across campus, I want these questions to fit on as few pages as possible).</p>
-
+<p>Now I don’t really believe that the effect of these circumstances are really that large. Most of the original studies that find support for these effects use extremely small samples and flexible analyses. More importantly, there are now multiple, large-scale replication attempts that have failed to find evidence for the original effects <span class="citation">(Klein et al. <a href="#ref-klein_many_2018">2018</a>; Lucas and Lawless <a href="#ref-lucas2011weather">2013</a>; Schimmack and Oishi <a href="#ref-Schimmack2005JoPaSP">2005</a>; Yap et al. <a href="#ref-yap_effect_2016">2017</a>)</span>.</p>
+<p>But these context effects—effects that challenge the reliability and validity of self-reports of subjective well-being—are not really the focus of this post. Rather, my focus is on the alternative measures that some have suggested should serve as a replacement to these global self-reports: <em>experiential</em> measures that are supposed to assess well-being in the moment using methods such as experience sampling.</p>
+<div id="the-logic-of-experiential-measures-of-subjective-well-being" class="section level4">
+<h4>The Logic of Experiential Measures of Subjective Well-Being</h4>
+<p>The problem with traditional global measures of well-being measures (it is said) is that it is too difficult and time consuming to think carefully about all the various aspects of life that one should consider when making such an evaluation. Therefore, people rely on heuristics, such as whatever information happens to be salient at the time of the judgment. If a person just happens to be thinking about a recent job success at the time the judgment is made, then that person might report higher well-being than if that person’s unsatisfying romantic relationship had instead been made salient.</p>
+<p>To get around this problem, researchers have suggested that we should avoid measuring <em>life as we think about it</em> and instead focus on <em>life as we experience it</em> <span class="citation">(Kahneman and Riis <a href="#ref-kahneman2005living">2005</a>)</span>. In other words, instead of relying on global judgments about how a person is doing as a whole, we should assess experiences from moment to moment, as they happen. Because it is quite simple for people to report how we are feeling at a single moment (you don’t have to remember anything or aggregate across domains or moments), then these experiential measures should be free of the biases and threats to validity that may show up in global, evaluative judgments. <span class="citation">Kahneman (<a href="#ref-Kahneman1999">1999</a>)</span> even suggested that these measures are so simple and straightforward that we should consider them to be something close to a measure of <em>objective happiness</em>. In other words, when we use experiential measures, we get closer to revealing the red lines in the Müller-Lyer figure above: We strip away the illusory context effects to reveal what people actually think about their lives.</p>
+</div>
+<div id="experience-sampling-versus-the-day-reconstruction-method" class="section level4">
+<h4>Experience Sampling Versus the Day Reconstruction Method</h4>
+<p>Now unfortunately, true experiential measures, as their name implies, require respondents to report about their experiences as they happen. And because experiences vary considerably from moment to moment, it is necessary to do this many, many times if we want to get a stable estimate of how a person’s life is going. This fact makes experiential measures more burdensome than standard, global measures, both for respondents and researchers alike. Even with the improvements in technology that have occurred over the past decade, this burden is still high. This means that incorporating experiential measures into large-scale research projects is often difficult to do.</p>
+<p>Because of this limitation, researchers have developed alternative procedures that attempt to capture the rich data of experiential measures without requiring participants to answer questions repeatedly over an extended period of time. Specifically, <span class="citation">Kahneman et al. (<a href="#ref-Kahneman2004S">2004</a>)</span> proposed the <em>Day Reconstruction Method</em> as a less burdensome alternative. In this approach, respondents reconstruct their experiences from the prior day, breaking them down into specific episodes. Respondents then provide details about each episode, including what they were doing, who they were with, and how they were feeling. The idea is that it should not be so difficult to remember the details of recent, concrete episodes, and thus, the DRM should be able to duplicate the information that one would obtain from the more burdensome ESM.</p>
+</div>
+<div id="but-does-it-work" class="section level4">
+<h4>But Does It Work?</h4>
+<p>The critique of global measures that researchers like Kahneman, Schwarz, and Strack have put forth seems so simple and elegant, and the ways that experiential measures solve these problems seems so clear, that it almost seems like <em>actual tests of validity</em> are not needed. Indeed, the DRM has been incorporated into some pretty important studies (like the <a href="https://www.bls.gov/tus/">American Time Use Survey</a>, the <a href="https://psidonline.isr.umich.edu/dust/dust13_userguide.pdf">Panel Study of Income Dynamics</a>, and the <a href="https://www.diw.de/en/soep">German Socio-Economic Panel Study</a><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>) without much evidence that the DRM actually does what it is supposed to do. For instance, in the original <em>Science</em> paper introducing the method, <span class="citation">Kahneman et al. (<a href="#ref-Kahneman2004S">2004</a>)</span> never presented any data that compared ESM and DRM reports from the same participants over the same period of time. And as far as I can tell, only a couple small-sample studies have done so since the publication of this initial work.</p>
+<p>Because of that, my colleagues<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> and I decided to take a look at how well these two methods converge (preprint just released <a href="https://psyarxiv.com/cv73u/">here</a>; at the time of this post, this has not yet been submitted, so comments are welcome). In two studies, we asked undergraduate participants to complete a day of ESM, followed by a single DRM that covered the same period. We then matched moments across methods to see whether reports of affect and situational experiences agreed. And did it work? Well, that depends on exactly what question you are trying to answer.</p>
+</div>
+<div id="first-the-good-news" class="section level4">
+<h4>First, the Good News</h4>
+<p>If you just want to know how much time people spend in different types of situations then you get pretty similar results across the two methods. Across all situation variable we measured, the estimates correlated <em>r =</em> .97. Here’s what a plot of those estimates looks like:<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a></p>
 <p><br>
-<div class="figure">
-<img src="https://res.cloudinary.com/demy2onqi/image/upload/q_auto:good/v1547840275/boxes-01_tmow5d.jpg" style="width:50%; margin:auto;"/>
-<p class="caption">The many, many boxes of exams I have carried across campus.</p>
-</div></p>
-
-<p>I think that <code>exams2pdf()</code> was actually designed to print a version of the exam that included solutions for students to use <em>after</em> they completed the exam. <em>R/Exams</em> also has a function called <code>exams2nops()</code> that does much of what <code>exams2pdf()</code> does, but without solutions. You can try it by running the following code:</p>
-
-<pre><code>examNops &lt;- exams2nops(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
-</code></pre>
-
-<p>Now you will get something that might be closer to what you want, as the solutions aren&rsquo;t printed. But you also get an answer sheet that students can use to actually record their responses (which I don&rsquo;t need, given that I am using the university&rsquo;s scantrons). In addition, I would actually like to be able to have this function print out a list of answers that I can give to my TAs to use when creating the scoring key for our scoring office.</p>
-
-<h1 id="modifying-r-exams-defaults">Modifying R/Exams Defaults</h1>
-
-<p>So to get exactly what I wanted, I needed to modify the template that is used by <em>R/Exams</em> when creating this output. This template needs to be in the &ldquo;tex&rdquo; directory of the package directory (which will differ depending your system). You can find my modified template file <a href="https://github.com/rlucas11/rexams/blob/master/myexam2.tex">here</a>.</p>
-
-<p>I started with the provided &ldquo;exam.tex&rdquo; template and then made a couple changes (most of which were suggested on the support forums, some of which I figured out on my own<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>). First, I changed the font-size to 10pt in the opening line:</p>
-
-<pre><code>\documentclass[10pt]{article}
-</code></pre>
-
-<p>In addition, I used the <em>geometry</em> package to change margins:</p>
-
-<pre><code>\usepackage[left=.5in, right=.5in, top=.5in, bottom=.75in]{geometry}
-</code></pre>
-
-<p>Third, I changed the answerlist environment to prevent answer lists from spanning multiple pages:</p>
-
-<pre><code>\newenvironment{answerlist}{\renewcommand{\labelenumi}{(\alph{enumi})}\begin{samepage}\begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]}{\end{enumerate}\end{samepage}}
-</code></pre>
-
-<p>Next, I wanted to use the answer sheet as a scoring sheet (i.e., something that shows a list of correct answers). So I changed this line:</p>
-
-<pre><code>\newcommand{\extext}[1]{\phantom{\large #1}}
-</code></pre>
-
-<p>to this one:</p>
-
-<pre><code>\newcommand{\extext}[1]{\textbf{\large #1}}
-</code></pre>
-
-<p>This now shows the correct answer for each question.</p>
-
-<p>In addition, at the end of the template, I changed the order of the &ldquo;exercises&rdquo; (all the individual questions) relative to the &ldquo;questionnaire&rdquo; (which is the answer sheet, or as I am using it, the list of correct answers). This prints the answers at the end of the pdf, and I can just remove those pages when sending the exam to the printer. So now in my template, the line</p>
-
-<pre><code>%% \exinput{questionnaire}
-</code></pre>
-
-<p>comes right before the end of the document. I also made some modifications to the title page. I actually don&rsquo;t use the title page (I replace it with one I&rsquo;ve used for other exams), but I could probably just modify this one to make it work for my purposes.</p>
-
-<p>So now the final command that I run to get the exams, formatted the way I want them is:</p>
-
-<pre><code class="language-r">finalExam &lt;- exams2pdf(myexam, n = 2, nsamp = 5, name = &quot;finalExam&quot;, template=&quot;myexam2&quot;)
-</code></pre>
-
-<p>This produces two formatted pdf files, each with the same questions in different orders, and each with a list of answers appended to the end (careful not to copy those last pages in the version you distribute to students). Add the type of title page you want, and they&rsquo;re ready for the printer!</p>
-
-<h1 id="an-r-exams-workflow">An R/Exams Workflow</h1>
-
-<p>Switching to <em>R/Exams</em> (from &ldquo;cut and paste&rdquo; or from using some other software) does require some additional changes to your workflow. Each exam question is stored in its own .Rnw or .Rmd file (I use .Rmd), so you need to rewrite your questions in this format. Personally, I organize sets of questions in separate directories by content area, and then select the questions that I want and add them to the list in &ldquo;myexam&rdquo; from the code above. Taking old exam questions and putting them into Rmarkdown format takes a little bit of time, but I think in the long run it will be worth it. Now I don&rsquo;t have to rely on proprietary (and clunky, and soon-to-be-unusuable) software to create nicely formatted exams from an existing pool of questions.</p>
-
-<p>There are a couple of things I&rsquo;d love to change, but I don&rsquo;t have the expertise that is required. First, I&rsquo;d like to have the answer lists formatted as two columns when all the responses are less than a half a line long and as one column otherwise; but I don&rsquo;t know enough about LaTeX to do that (and nobody could answer my question on twitter). Second, I&rsquo;d like to figure out how to randomly select questions from a pool <em>and</em> to create multiple versions with different orders but that use these same questions. I can&rsquo;t figure out how to get <em>R/Exams</em> to do both. It would also be pretty amazing to develop a converter that could take questions from course management software and output them to individual Rmd files; but that is certainly beyond my abilities. So if anyone has solutions to those issues, let me know!</p>
+<img src="http://deskreject.com/post/2019-02-11-happiness-illusions_files/figure-html/sitPlot-1.png" width="672" /></p>
+<p>It’s kind of fun to see what students do with their time; but the important thing for us is that the picture one gets is pretty similar regardless of the source of the data.</p>
+<p>Similarly, if you want to just look at which situations are most enjoyable, you get similar information from the two approaches. The correlation between average positive affect reported for each situations as estimated by the two methods is <em>r = </em>0.85. Again, here’s a plot from Study 1:</p>
+<p><br>
+<img src="http://deskreject.com/post/2019-02-11-happiness-illusions_files/figure-html/paPlot-1.png" width="672" /></p>
+<p>Finally, even if we want to move beyond the situation level, we find some decent cross-method agreement. For instance, if we want to know how happy people are over the course of an entire day (in other words, if we want to look at between-person differences in average affect), then ESM and DRM give us pretty similar results. In this case, the correlation is <em>r =</em> 0.83 (data plotted below). Everything looks good so far.</p>
+<p><br>
+<img src="http://deskreject.com/post/2019-02-11-happiness-illusions_files/figure-html/bPaPlot-1.png" width="672" /></p>
+</div>
+<div id="now-the-bad-news" class="section level4">
+<h4>Now the Bad News</h4>
+<p>It turns out that cross-method correspondence isn’t always so good. Although estimates of person-level affect converge, correlations between the two estimates of time-use are not quite as strong. If we calculate the average amount of time that each person spends in each type of situation, the correlations are only moderate, ranging from very low (<em>r = </em>.05 for time spent eating) to pretty high (<em>r =</em> .78 for time spent with one’s boss), with an average correlation of .50.</p>
+<p>Even worse, when we start to look within-persons over time, things start to get really bad. Now remember, although experiential measures were developed in part to address concerns about global self-report measures, they are also thought to be useful because of the incredibly rich data about within-person changes that these measures can provide. By having people report on their experiences multiple times per day, it is possible to track changes in well-being from moment to moment and then link these changes to the situational factors that people experience. But how do we validate these within-person reports? One way is to look to see whether two measures that purport to tap this within-person variance converge.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<p>In both studies, cross-method agreement was disappointingly low, both for ratings of affect and situational experiences. For instance, average within-person correlations between the two methods of assessment ranged only from .31 to .36 for positive and negative affect across the two studies. Average within-person <em>kappa</em> coefficients for dichotomous situational variables were also low, with an average of just .34 and .29 in the two studies. This means that we might get very different answers about how a person’s subjective and objective experiences have changed over the course of the day, or how those objective and subjective experiences relate to one another, depending on whether we rely on ESM or DRM.</p>
+<p>To be fair (and as we discuss in length in the paper), these correlations are derived from a relatively small amount of within-person data. It is possible (though not certain) that with multiple days of assessment, these associations would improve.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> But again, it’s important to point out that one reason why the DRM has been incorporated into so many large-scale studies is that it can be administered in a single session, which means that a single day of DRM is often what is possible. So I think our study provides a pretty realistic picture of the convergence one would get from these methods as they are typically used.</p>
+</div>
+<div id="wrapping-up" class="section level4">
+<h4>Wrapping UP</h4>
+<p>In my experience, I’ve found that people are quick to criticize global self-reports of subjective well-being. Many of the concerns are well-founded, and I agree that there are lots of reasons to be skeptical of these self-reports. Research on well-being will be improved by taking these measurement concerns seriously. Yet at the same time, I’ve seen some people adopt alternative measures—measures that clearly address one or two potential problems of global self-reports—without applying the same level of skepticism regarding the psychometric characteristics of these alternatives. I think that, to some extent, this has happened with experiential measures like the DRM. People often adopt these measures without asking important questions about whether they really do what they say they do. At the very least, the data from our two <a href="https://psyarxiv.com/cv73u/">studies</a> suggest that the DRM may not be tapping the same information as the ESM, which should lead to some concerns about the validity of measures derived from the DRM. In fact, I think there are some reasons why measures like the DRM—and perhaps even the ESM—might be <em>worse</em> than global measures for assessing subjective well-being. But I’ll save those concerns for my next post.</p>
+</div>
+<div id="references" class="section level4 unnumbered">
+<h4>References</h4>
+<div id="refs" class="references">
+<div id="ref-Kahneman1999">
+<p>Kahneman, Daniel. 1999. “Objective Happiness.” In <em>Well-Being: The Foundations of Hedonic Psychology</em>, edited by Daniel Kahneman, Ed Diener, and Norbert Schwarz, 3–25. New York, NY: Russell Sage Foundation.</p>
+</div>
+<div id="ref-Kahneman2004S">
+<p>Kahneman, Daniel, Alan B. Krueger, David A. Schkade, Norbert Schwarz, and Arthur A. Stone. 2004. “A Survey Method for Characterizing Daily Life Experience: The Day Reconstruction Method.” <em>Science</em> 306 (5702): 1776–80. <a href="https://doi.org/10.1126/science.1103572">https://doi.org/10.1126/science.1103572</a>.</p>
+</div>
+<div id="ref-kahneman2005living">
+<p>Kahneman, Daniel, and Jason Riis. 2005. “Living, and Thinking About It: Two Perspectives on Life.” In <em>The Science of Well-Being</em>, edited by Felicia A. Huppert, N. Baylis, and B. Keverne, 285–304. New York: Oxford University Press, USA.</p>
+</div>
+<div id="ref-klein_many_2018">
+<p>Klein, Richard A., Michelangelo Vianello, Fred Hasselman, Byron G. Adams, Reginald B. Adams, Sinan Alper, Mark Aveyard, et al. 2018. “Many Labs 2: Investigating Variation in Replicability Across Samples and Settings.” <em>Advances in Methods and Practices in Psychological Science</em> 1 (4): 443–90. <a href="https://doi.org/10.1177/2515245918810225">https://doi.org/10.1177/2515245918810225</a>.</p>
+</div>
+<div id="ref-lucas2011weather">
+<p>Lucas, Richard E., and Nicole M Lawless. 2013. “Does Life Seem Better on a Sunny Day? Examining the Association Between Daily Weather Conditions and Life Satisfaction Judgments.” <em>Journal of Personality and Social Psychology</em> 104 (5): 872–84. <a href="https://doi.org/10.1037/a0032124">https://doi.org/10.1037/a0032124</a>.</p>
+</div>
+<div id="ref-Schimmack2005JoPaSP">
+<p>Schimmack, Ulrich, and Shigehiro Oishi. 2005. “The Influence of Chronically and Temporarily Accessible Information on Life Satisfaction Judgments.” <em>Journal of Personality and Social Psychology</em> 89 (3): 395–406. <a href="https://doi.org/10.1037/0022-3514.89.3.395">https://doi.org/10.1037/0022-3514.89.3.395</a>.</p>
+</div>
+<div id="ref-Schwarz1999">
+<p>Schwarz, Norbert, and Fritz Strack. 1999. “Reports of Subjective Well-Being: Judgmental Processes and Their Methodological Implications.” In <em>Well-Being: The Foundations of Hedonic Psychology</em>, edited by Daniel Kahneman, Ed Diener, and Norbert Schwarz, 61–84. New York, NY: Russell Sage Foundation.</p>
+</div>
+<div id="ref-yap_effect_2016">
+<p>Yap, Stevie C. Y., Jessica Wortman, Ivana Anusic, S. Glenn, Laura D. Scherer, M. Brent Donnellan, and Richard E. Lucas. 2017. “The Effect of Mood on Judgments of Subjective Well-Being: Nine Tests of the Judgment Model.” <em>Journal of Personality and Social Psychology</em> 113 (6): 939–61. <a href="https://doi.org/10.1037/pspp0000115">https://doi.org/10.1037/pspp0000115</a>.</p>
+</div>
+</div>
+</div>
 <div class="footnotes">
-
 <hr />
-
 <ol>
-<li id="fn:1">I&rsquo;m also doing this from memory, so I hope I haven&rsquo;t forgotten any of the important changes I made.
- <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn1"><p>I admit to being somewhat responsible for the last of these.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Carol Wallsworth, Ivana Anusic, and Brent Donnellan.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p>These results are from Study 1 of our paper; Study 2 looks pretty similar.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>And yes, we should expect these to be lower than the between-person correlations because much of the random measurement error in the momentary assessments is averaged out when aggregating; but these still seem low to me.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>We’re working on that now.<a href="#fnref5" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 
@@ -414,11 +366,11 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/teaching/">Teaching</a>
+  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/happiness/">Happiness</a>
 
-  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/rstats/">rstats</a>
+  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/measurement/">Measurement</a>
 
-  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/r/exams/">R/Exams</a>
+  <a class="tag tag--primary tag--small" href="http://deskreject.com/tags/self-report/">Self-Report</a>
 
                   </div>
                 
@@ -430,7 +382,7 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2019/02/how-to-measure-happiness/" data-tooltip="How to Measure Happiness">
+            <a class="post-action-btn btn btn--disabled">
           
             <i class="fa fa-angle-left"></i>
             <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -438,7 +390,7 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2018/07/harping/" data-tooltip="HARPing: Hedging After a Replication is Proposed">
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2019/01/r-exams/" data-tooltip="Using R to Create Multiple Choice Exams">
           
             <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
             <i class="fa fa-angle-right"></i>
@@ -455,17 +407,17 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
           <i class="fa fa-facebook-official"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
@@ -511,7 +463,7 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2019/02/how-to-measure-happiness/" data-tooltip="How to Measure Happiness">
+            <a class="post-action-btn btn btn--disabled">
           
             <i class="fa fa-angle-left"></i>
             <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -519,7 +471,7 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2018/07/harping/" data-tooltip="HARPing: Hedging After a Replication is Proposed">
+            <a class="post-action-btn btn btn--default tooltip--top" href="http://deskreject.com/2019/01/r-exams/" data-tooltip="Using R to Create Multiple Choice Exams">
           
             <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
             <i class="fa fa-angle-right"></i>
@@ -536,17 +488,17 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
           <i class="fa fa-google-plus"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
           <i class="fa fa-facebook-official"></i>
         </a>
       </li>
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
           <i class="fa fa-twitter"></i>
         </a>
       </li>
@@ -573,17 +525,17 @@ examPdf &lt;- exams2pdf(myexam, nsamp = 3, n = 2, name = &quot;exam&quot;)
       <div id="share-options-bar" class="share-options-bar" data-behavior="4">
   <ul class="share-options">
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
         <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
         <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f01%2fr-exams%2f">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fdeskreject.com%2f2019%2f02%2fhow-to-measure-happiness%2f">
         <i class="fa fa-twitter"></i><span>Share on Twitter</span>
       </a>
     </li>
@@ -845,9 +797,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'http:\/\/deskreject.com\/2019\/01\/r-exams\/';
+          this.page.url = 'http:\/\/deskreject.com\/2019\/02\/how-to-measure-happiness\/';
           
-            this.page.identifier = '\/2019\/01\/r-exams\/'
+            this.page.identifier = '\/2019\/02\/how-to-measure-happiness\/'
           
         };
         (function() {
