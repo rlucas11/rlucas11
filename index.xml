@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Desk Reject</title>
-    <link>http://deskreject.com/</link>
+    <link>https://deskreject.com/</link>
     <description>Recent content on The Desk Reject</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://deskreject.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://deskreject.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Measure Happiness</title>
-      <link>http://deskreject.com/2019/02/how-to-measure-happiness/</link>
+      <link>https://deskreject.com/2019/02/how-to-measure-happiness/</link>
       <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2019/02/how-to-measure-happiness/</guid>
+      <guid>https://deskreject.com/2019/02/how-to-measure-happiness/</guid>
       <description>Anyone who has ever taught Intro Psych knows that one of the most popular lectures is the one that covers visual illusions. It’s easy to understand why. Illusions like the famous Müller-Lyer illusion shown below provide a clear example of times when our perception of the world is clearly, and demonstrably wrong. Although it’s almost impossible not to see the three lines as differing in length, simply removing the arrows at the ends shows that they are all, in fact, the same.</description>
     </item>
     
     <item>
       <title>Using R to Create Multiple Choice Exams</title>
-      <link>http://deskreject.com/2019/01/r-exams/</link>
+      <link>https://deskreject.com/2019/01/r-exams/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2019/01/r-exams/</guid>
+      <guid>https://deskreject.com/2019/01/r-exams/</guid>
       <description>About ten years ago, I made one of the best work-related decisions I&amp;rsquo;ve ever made: Switching from Windows (and SPPS) to linux (and R). Not having to deal with the endless load times of SPSS or the inevitable Windows slowdowns that make you think, after six months of use, that you need a new computer&amp;mdash;plus all the unfixable bugs, unexplainable crashes, and generally strange behavior&amp;mdash;has done more for my blood pressure than any medication or change in diet ever could.</description>
     </item>
     
     <item>
       <title>HARPing: Hedging After a Replication is Proposed</title>
-      <link>http://deskreject.com/2018/07/harping/</link>
+      <link>https://deskreject.com/2018/07/harping/</link>
       <pubDate>Fri, 06 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2018/07/harping/</guid>
+      <guid>https://deskreject.com/2018/07/harping/</guid>
       <description>Remember the early days of the replication crisis? The first few high profile attempts to replicate famous psychological findings were not always embraced by the original authors (to put it mildly). Original authors (and their defenders) often resorted to name calling (even in blogs!) and other attacks that would prompt any self-respecting member of the tone police to write a scathing admonishment in a society-sponsored newsletter.1
 Fortunately, those responses have softened over time.</description>
     </item>
     
     <item>
       <title>Happiness Research During the Replication Crisis</title>
-      <link>http://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</link>
+      <link>https://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</guid>
+      <guid>https://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</guid>
       <description>In honor of International Day of Happiness, I’m posting my SPSP talk from a few weeks ago, where I discuss happiness research during the replication crisis. I talk about some good things about happiness research, and also some things that could be improved. But more importantly, I brag about my seventh grade awards, talk about the type of happiness research that I’m most skeptical about, praise data thugs, and tell the story of how we became replication bullies.</description>
     </item>
     
     <item>
       <title>Yes, Your Field Does Need to Worry About Replicability</title>
-      <link>http://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</link>
+      <link>https://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</guid>
+      <guid>https://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</guid>
       <description>One of the most exciting things to happen during the years-long debate about the replicability of psychological research is the shift in focus from providing evidence that there is a problem to developing concrete plans for solving those problems. Whether it is journal badges that reward good practices, statistical software that can check for problems before papers are published, collaborative efforts to deal with limited resources and underpowered studies, proposals for new standards of evidence, or even entire societies dedicated to figuring out what we can do to make thing better, many people have devoted an incredible amount of thought, time, and energy to figuring out how we can fix any problems that exist and move the field forward.</description>
     </item>
     
     <item>
       <title>W.W.P.M.D?</title>
-      <link>http://deskreject.com/2017/06/w.w.p.m.d/</link>
+      <link>https://deskreject.com/2017/06/w.w.p.m.d/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2017/06/w.w.p.m.d/</guid>
+      <guid>https://deskreject.com/2017/06/w.w.p.m.d/</guid>
       <description>One of the most contentious issues in recent debates about replication studies concerns the importance of context in explaining failed replications. Those who question the value of direct replication often suggest that many psychological effects should be expected not to replicate because they depend so strongly on a multitude of seemingly inconsequential contextual factors. Thus, because you can’t step in the same river twice, direct replication attempts should often be expected to fail.</description>
     </item>
     
     <item>
       <title>The Rules of Replication: Part II</title>
-      <link>http://deskreject.com/2017/05/the-rules-of-replication-part-ii/</link>
+      <link>https://deskreject.com/2017/05/the-rules-of-replication-part-ii/</link>
       <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2017/05/the-rules-of-replication-part-ii/</guid>
+      <guid>https://deskreject.com/2017/05/the-rules-of-replication-part-ii/</guid>
       <description>Cece doesn’t understand the rules of the couch.  Do replication studies need special rules? In my previous post I focused on the question of whether replicators need to work with original authors when conducting their replication studies. I argued that this rule is based on the problematic idea that original authors somehow own an effect and that their reputations will be harmed if that effect turns out to be fragile or to have been a false positive.</description>
     </item>
     
     <item>
       <title>The Rules of Replication</title>
-      <link>http://deskreject.com/2017/05/the-rules-of-replication/</link>
+      <link>https://deskreject.com/2017/05/the-rules-of-replication/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://deskreject.com/2017/05/the-rules-of-replication/</guid>
+      <guid>https://deskreject.com/2017/05/the-rules-of-replication/</guid>
       <description>Recently I traveled to Vienna for APS’s International Convention on Psychological Science, where I gave a talk on “The Rules of Replication.” Thanks to the other great talks in the session, it was well attended. But as anyone who goes to academic conferences knows, “well attended” typically means that at best, there may have been a couple hundred people in the room. And it seems like kind of a waste to prepare a talk—one that I will probably only give once—for such a limited audience.</description>
     </item>
     
