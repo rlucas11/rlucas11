@@ -21,7 +21,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.54.0">
+    <meta name="generator" content="Hugo 0.56.3">
     <meta name="theme" content="Tranquilpeak 0.3.1-BETA">
     <title>The Rules of Replication: Part II</title>
     <meta name="author" content="Rich Lucas">
@@ -275,7 +275,7 @@ Cece doesn’t understand the rules of the couch.
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p>Furthermore, even guidelines for registered replication reports (guidelines that are often written by advocates of replication) often stipulate that the final report will only be published if various quality checks like this are passed. However, ritualistic adherence to this rule can be problematic.</p>
-<p>To provide a little context, I’ll focus on a specific set of studies that my colleagues<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and I recently published. Our <a href="https://osf.io/preprints/psyarxiv/5fj9c">paper</a> reports nine attempts to replicate a classic finding by <span class="citation">Schwarz and Clore (<a href="#ref-Schwarz1983JoPaSP">1983</a>)</span>. This original study showed that life satisfaction judgments can be strongly<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> influenced by transient and inconsequential factors like one’s mood at the time of the judgment.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> This original study manipulated mood in one study by asking participants to write about positive or negative life events and in a second study by contacting them on days with pleasant or unpleasant weather. Follow-up studies by these authors used additional mood manipulations including arranging it so that participants would find a dime on a copy machine <span class="citation">(Schwarz <a href="#ref-Schwarz1987">1987</a>)</span>, by contacting people after their favorite soccer team won a game <span class="citation">(Schwarz et al. <a href="#ref-Schwarz1987a">1987</a>)</span>, or by having participants complete a task in a pleasant or unpleasant room <span class="citation">(Schwarz et al. <a href="#ref-Schwarz1987a">1987</a>)</span>. The original report of this phenomenon is one of the most cited papers in social psychology and was even nominated as a “modern classic” <span class="citation">(Schwarz and Clore <a href="#ref-schwarz2003mood">2003</a>)</span>, yet there are few if any replications conducted by researchers other than the original authors.</p>
+<p>To provide a little context, I’ll focus on a specific set of studies that my colleagues<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and I recently published. Our <a href="https://osf.io/preprints/psyarxiv/5fj9c">paper</a> reports nine attempts to replicate a classic finding by <span class="citation">Schwarz and Clore (<a href="#ref-Schwarz1983JoPaSP" role="doc-biblioref">1983</a>)</span>. This original study showed that life satisfaction judgments can be strongly<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> influenced by transient and inconsequential factors like one’s mood at the time of the judgment.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> This original study manipulated mood in one study by asking participants to write about positive or negative life events and in a second study by contacting them on days with pleasant or unpleasant weather. Follow-up studies by these authors used additional mood manipulations including arranging it so that participants would find a dime on a copy machine <span class="citation">(Schwarz <a href="#ref-Schwarz1987" role="doc-biblioref">1987</a>)</span>, by contacting people after their favorite soccer team won a game <span class="citation">(Schwarz et al. <a href="#ref-Schwarz1987a" role="doc-biblioref">1987</a>)</span>, or by having participants complete a task in a pleasant or unpleasant room <span class="citation">(Schwarz et al. <a href="#ref-Schwarz1987a" role="doc-biblioref">1987</a>)</span>. The original report of this phenomenon is one of the most cited papers in social psychology and was even nominated as a “modern classic” <span class="citation">(Schwarz and Clore <a href="#ref-schwarz2003mood" role="doc-biblioref">2003</a>)</span>, yet there are few if any replications conducted by researchers other than the original authors.</p>
 <p>Because I use life satisfaction measures in my own research, this finding—which challenges the validity of these measures—has implications for my own and my colleagues’ research. And because we wanted to understand these implications more fully, we set out to replicate it with larger samples to obtain more precise estimates of the size of these effects.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
 <p>Long story short, our results were quite different than what was found in the original studies. Here’s a forest plot from a meta-analysis of the original studies compared to our replication attempts:<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
 <p><img src="http://res.cloudinary.com/demy2onqi/image/upload/q_30/v1493598305/LSMeta_qrcqvo.jpg" /></p>
@@ -345,22 +345,22 @@ meta &lt;- read.csv(&#39;meta.csv&#39;)
 </div>
 <div id="additional-researcher-degrees-of-freedom" class="section level4">
 <h4>Additional Researcher Degrees of Freedom</h4>
-<p>A second reason why this requirement can be problematic is that until public preregistration becomes the norm for both original and replication studies, the use of failed manipulation checks as a reason for excluding studies from the published record can serve as an additional “researcher degree of freedom” that can increase rates of false positive findings in the literature. For instance, in one paper in the original series of studies on this effect, <span class="citation">Strack, Schwarz, and Gschneidinger (<a href="#ref-Strack1985JoPaSP">1985</a>)</span> conducted studies with designs similar to ours. In at least one of the two studies where mood was expected to differ across conditions, the manipulation check was not significant (in the other, the statistics are somewhat ambiguous, though a p value less than .05 was reported)<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>, yet both studies were presented and interpreted. I’m not saying that this decision was necessarily wrong (as I noted, both manipulation checks were suggestive of an effect but appeared not to meet traditional thresholds for significance), but if rules about using manipulation checks to dismiss study results are applied inconsistently, then this additional researcher degree of freedom can lead to an overly positive picture of the evidence for an effect. And it’s important to remember that capitalizing on researcher degrees of freedom does not have to happen with any awareness on the part of the researchers. So the danger is that manipulation checks will only be interpreted as an indicator of study quality when the study fails to find the expected effect. Again, transparency with appropriately nuanced conclusions seems to be a better approach.</p>
+<p>A second reason why this requirement can be problematic is that until public preregistration becomes the norm for both original and replication studies, the use of failed manipulation checks as a reason for excluding studies from the published record can serve as an additional “researcher degree of freedom” that can increase rates of false positive findings in the literature. For instance, in one paper in the original series of studies on this effect, <span class="citation">Strack, Schwarz, and Gschneidinger (<a href="#ref-Strack1985JoPaSP" role="doc-biblioref">1985</a>)</span> conducted studies with designs similar to ours. In at least one of the two studies where mood was expected to differ across conditions, the manipulation check was not significant (in the other, the statistics are somewhat ambiguous, though a p value less than .05 was reported)<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>, yet both studies were presented and interpreted. I’m not saying that this decision was necessarily wrong (as I noted, both manipulation checks were suggestive of an effect but appeared not to meet traditional thresholds for significance), but if rules about using manipulation checks to dismiss study results are applied inconsistently, then this additional researcher degree of freedom can lead to an overly positive picture of the evidence for an effect. And it’s important to remember that capitalizing on researcher degrees of freedom does not have to happen with any awareness on the part of the researchers. So the danger is that manipulation checks will only be interpreted as an indicator of study quality when the study fails to find the expected effect. Again, transparency with appropriately nuanced conclusions seems to be a better approach.</p>
 </div>
 <div id="sometimes-the-replication-is-about-the-manipulation" class="section level4">
 <h4>Sometimes the Replication is About the Manipulation</h4>
-<p>A third reason why we may not want to exclude studies with failed replication attempts from the literature is that sometimes the replicability of the manipulation itself can be questioned. As just one example, a recent registered replication report attempted to replicate a widely cited finding that relationship commitment affects relationship partners’ tendency to forgive relationship transgressions <span class="citation">(Cheung et al. <a href="#ref-cheung_registered_2016">2016</a>)</span>. The original study tested this hypothesis by priming relationship commitment and then examining the effects of this manipulation on responses to hypothetical betrayals. Sixteen independent labs attempted to replicate the original effect, and these labs consistently failed to replicate both the focal result and the manipulation check. In a model of gracious reaction to a failed replication, the original author acknowledged the potential problems with the original manipulation <span class="citation">(Finkel <a href="#ref-finkel_reflections_2016">2016</a>)</span>, and overall, the replication attempt provided valuable information about the robustness of a theoretically important finding from the literature.</p>
+<p>A third reason why we may not want to exclude studies with failed replication attempts from the literature is that sometimes the replicability of the manipulation itself can be questioned. As just one example, a recent registered replication report attempted to replicate a widely cited finding that relationship commitment affects relationship partners’ tendency to forgive relationship transgressions <span class="citation">(Cheung et al. <a href="#ref-cheung_registered_2016" role="doc-biblioref">2016</a>)</span>. The original study tested this hypothesis by priming relationship commitment and then examining the effects of this manipulation on responses to hypothetical betrayals. Sixteen independent labs attempted to replicate the original effect, and these labs consistently failed to replicate both the focal result and the manipulation check. In a model of gracious reaction to a failed replication, the original author acknowledged the potential problems with the original manipulation <span class="citation">(Finkel <a href="#ref-finkel_reflections_2016" role="doc-biblioref">2016</a>)</span>, and overall, the replication attempt provided valuable information about the robustness of a theoretically important finding from the literature.</p>
 <p>In this case, the fact that all sixteen labs failed to find support for the validity of the manipulation made conclusions about the replicability of the original manipulation straightforward, but imagine if this replication had been attempted by a single lab. It might have been easy to dismiss the failure as a function of the skill of the replicators.</p>
-<p>Going back to our studies on mood and life satisfaction, the fact that some of our manipulation checks failed provides important information, especially given the state of knowledge about the effectiveness of the procedures that were used. For instance, in a prior <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3695376/">study</a>, we used data from almost a million people to test the extent to which weather conditions were associated with reports of life satisfaction <span class="citation">(Lucas and Lawless <a href="#ref-lucas2011weather">2013</a>)</span>. Despite the extremely high power of this study we found no meaningful effects. <span class="citation">Simonsohn (<a href="#ref-simonsohn_small_2015">2015</a>)</span> discussed these results in his paper on how replications should be interpreted, and <span class="citation">Schwarz and Clore (<a href="#ref-schwarz_evaluating_2016">2016</a>)</span> challenged Simonsohn’s argument that our study could even be considered a replication of <span class="citation">Schwarz and Clore (<a href="#ref-Schwarz1983JoPaSP">1983</a>)</span>. The gist of their argument was that they, in the original study, were not interested in the effects of <em>weather</em> on life satisfaction but in the effects of <em>mood</em> on life satisfaction; weather was simply used as a convenient way to manipulate mood. Therefore, studies that do not assess mood (or that use mood induction procedures that do not successfully change people’s mood) tell us little about the robustness of the original finding.</p>
+<p>Going back to our studies on mood and life satisfaction, the fact that some of our manipulation checks failed provides important information, especially given the state of knowledge about the effectiveness of the procedures that were used. For instance, in a prior <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3695376/">study</a>, we used data from almost a million people to test the extent to which weather conditions were associated with reports of life satisfaction <span class="citation">(Lucas and Lawless <a href="#ref-lucas2011weather" role="doc-biblioref">2013</a>)</span>. Despite the extremely high power of this study we found no meaningful effects. <span class="citation">Simonsohn (<a href="#ref-simonsohn_small_2015" role="doc-biblioref">2015</a>)</span> discussed these results in his paper on how replications should be interpreted, and <span class="citation">Schwarz and Clore (<a href="#ref-schwarz_evaluating_2016" role="doc-biblioref">2016</a>)</span> challenged Simonsohn’s argument that our study could even be considered a replication of <span class="citation">Schwarz and Clore (<a href="#ref-Schwarz1983JoPaSP" role="doc-biblioref">1983</a>)</span>. The gist of their argument was that they, in the original study, were not interested in the effects of <em>weather</em> on life satisfaction but in the effects of <em>mood</em> on life satisfaction; weather was simply used as a convenient way to manipulate mood. Therefore, studies that do not assess mood (or that use mood induction procedures that do not successfully change people’s mood) tell us little about the robustness of the original finding.</p>
 <p>I think that many of us have the intuition that our mood improves when the weather is nice. Indeed, Schwarz and Clore’s intuitions were so strong that they thought it unnecessary to pretest the effectiveness of this manipulation or to identify prior literature that supported their intuition. In their look back on these studies they noted:</p>
 <blockquote>
-<p>In retrospect, we are surprised by how “painless” these experiments were. Unless our memories fail us, we did not conduct extensive pretests, were spared poor results and new starts, and had the good luck of “things falling into place” on the first trial <span class="citation">(Schwarz and Clore <a href="#ref-schwarz2003mood">2003</a>, 298)</span></p>
+<p>In retrospect, we are surprised by how “painless” these experiments were. Unless our memories fail us, we did not conduct extensive pretests, were spared poor results and new starts, and had the good luck of “things falling into place” on the first trial <span class="citation">(Schwarz and Clore <a href="#ref-schwarz2003mood" role="doc-biblioref">2003</a>, 298)</span></p>
 </blockquote>
 <p>and</p>
 <blockquote>
-<p>We could comfortably rely on mental simulations of our own likely responses in setting up the procedures <span class="citation">(Schwarz and Clore <a href="#ref-schwarz2003mood">2003</a>, 298)</span></p>
+<p>We could comfortably rely on mental simulations of our own likely responses in setting up the procedures <span class="citation">(Schwarz and Clore <a href="#ref-schwarz2003mood" role="doc-biblioref">2003</a>, 298)</span></p>
 </blockquote>
-<p>The problem is that there are good reasons to be skeptical that weather does affect mood, especially so strongly that it could result in effects as large as those found in the original study. As detailed in our paper <span class="citation">(Lucas and Lawless <a href="#ref-lucas2011weather">2013</a>)</span> and in a great blog post by <a href="http://www.talyarkoni.org/blog/2015/05/18/the-mysterious-inefficacy-of-weather/">Tal Yarkoni</a>, it’s surprisingly difficult to find empirical evidence that weather is linked with mood. Most studies that have looked haven’t found much there. So an important goal of our paper was to test the replicability of the mood effect on life satisfaction <em>and</em> to test the replicability of manipulations like weather on mood. Both pieces of evidence help evaluate past research in this area.</p>
+<p>The problem is that there are good reasons to be skeptical that weather does affect mood, especially so strongly that it could result in effects as large as those found in the original study. As detailed in our paper <span class="citation">(Lucas and Lawless <a href="#ref-lucas2011weather" role="doc-biblioref">2013</a>)</span> and in a great blog post by <a href="http://www.talyarkoni.org/blog/2015/05/18/the-mysterious-inefficacy-of-weather/">Tal Yarkoni</a>, it’s surprisingly difficult to find empirical evidence that weather is linked with mood. Most studies that have looked haven’t found much there. So an important goal of our paper was to test the replicability of the mood effect on life satisfaction <em>and</em> to test the replicability of manipulations like weather on mood. Both pieces of evidence help evaluate past research in this area.</p>
 <p>So did we find evidence that weather affects mood? Across two studies with much larger samples than the original, the answer was consistently “no”:<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
 <p><img src="https://deskreject.com/post/manipulation-checks_files/figure-html/weather-1.png" width="672" /></p>
 <p>It is absolutely true that because these mood inductions failed, these two studies cannot be used to answer the question of whether mood affects life satisfaction judgments. They can, however, be used to update our beliefs about the strength of existing evidence for such effects. An important brick in the wall of evidence used to support the idea that mood affects life satisfaction judgments comes from a single study that used weather as a manipulation. Until additional replications can be conducted, our results suggest that that particular brick may be weak.</p>
@@ -408,14 +408,14 @@ meta &lt;- read.csv(&#39;meta.csv&#39;)
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>The opinions in this post are mine and may not reflect those of my co-authors.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>Standardized mean differences in the range of 1 to 2.<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>Though the goal of the study was to test ideas about when people are likely to rely on their mood when making other judgments, and the original studies included more conditions than our replications did so the authors could examine this important theoretical question.<a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>And if you need a little boost of optimism about the field, these studies—which were explicitly pitched as replications—were funded by the NIA (AG040175).<a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>Note that there are a couple other studies that could be included in the top section, but that did not report enough information to calculate effect sizes. Our attempts to calculate these effects are described <a href="https://osf.io/s8apm/">here</a>. Also note that the estimates reported in the plot are from a random-effects meta-analysis; the scripts on our OSF page can be modified to test alternative meta-analytic models.<a href="#fnref5" class="footnote-back">↩</a></p></li>
-<li id="fn6"><p>And because this post is written in Rmarkdown, you can get the code and data by visiting the <a href="https://github.com/rlucas11/rlucas11">github</a> site where this blog is hosted.<a href="#fnref6" class="footnote-back">↩</a></p></li>
-<li id="fn7"><p>In both studies a 2 X 2 design was used, and the mood effect was only expected in one condition of the other manipulated factor. In Study 2, the only manipulation check statistic reported was for the effect of mood in the condition that was expected to work, and the <em>p</em>-value was .06. In Study 3, the only manipulation check statistic reported was for the interaction.<a href="#fnref7" class="footnote-back">↩</a></p></li>
-<li id="fn8"><p>Full disclosure: running these studies was challenging, and identifying days that differed only in weather conditions was difficult. For a full discussion of these difficulties and the implications for our results, please take a look at our paper.<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>The opinions in this post are mine and may not reflect those of my co-authors.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Standardized mean differences in the range of 1 to 2.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Though the goal of the study was to test ideas about when people are likely to rely on their mood when making other judgments, and the original studies included more conditions than our replications did so the authors could examine this important theoretical question.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>And if you need a little boost of optimism about the field, these studies—which were explicitly pitched as replications—were funded by the NIA (AG040175).<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Note that there are a couple other studies that could be included in the top section, but that did not report enough information to calculate effect sizes. Our attempts to calculate these effects are described <a href="https://osf.io/s8apm/">here</a>. Also note that the estimates reported in the plot are from a random-effects meta-analysis; the scripts on our OSF page can be modified to test alternative meta-analytic models.<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>And because this post is written in Rmarkdown, you can get the code and data by visiting the <a href="https://github.com/rlucas11/rlucas11">github</a> site where this blog is hosted.<a href="#fnref6" class="footnote-back">↩︎</a></p></li>
+<li id="fn7"><p>In both studies a 2 X 2 design was used, and the mood effect was only expected in one condition of the other manipulated factor. In Study 2, the only manipulation check statistic reported was for the effect of mood in the condition that was expected to work, and the <em>p</em>-value was .06. In Study 3, the only manipulation check statistic reported was for the interaction.<a href="#fnref7" class="footnote-back">↩︎</a></p></li>
+<li id="fn8"><p>Full disclosure: running these studies was challenging, and identifying days that differed only in weather conditions was difficult. For a full discussion of these difficulties and the implications for our results, please take a look at our paper.<a href="#fnref8" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
@@ -657,6 +657,41 @@ meta &lt;- read.csv(&#39;meta.csv&#39;)
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="https://deskreject.com/post/">
+                <h3 class="media-heading">Posts</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://deskreject.com/2019/08/time-for-change-at-spsp-journals/">
+                <h3 class="media-heading">Time For A Change At SPSP Journals</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Disclaimer: This post reflects my own opinions and is not an official statement of policy at the Society for Personality and Social Psychology. I received permission from SPSP’s Executive Director to discuss the outcomes of the recent SPSP board meeting.
+ Last week, I went to St. Louis to attend my final meeting as member at large for the Society for Personality and Social Psychology. Board members and elected officers use these meetings to discuss new policies and to make decisions about the society’s goals and priorities.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="https://deskreject.com/2019/03/measuring-happiness-is-hard/">
                 <h3 class="media-heading">Measuring Happiness Is Harder (But Maybe Also Easier) Than You Think</h3>
               </a>
@@ -791,40 +826,6 @@ Fortunately, those responses have softened over time.</div>
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://deskreject.com/2017/05/the-rules-of-replication/">
-                <h3 class="media-heading">The Rules of Replication</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2017
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather">Recently I traveled to Vienna for APS’s International Convention on Psychological Science, where I gave a talk on “The Rules of Replication.” Thanks to the other great talks in the session, it was well attended. But as anyone who goes to academic conferences knows, “well attended” typically means that at best, there may have been a couple hundred people in the room. And it seems like kind of a waste to prepare a talk—one that I will probably only give once—for such a limited audience.</div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://deskreject.com/post/">
-                <h3 class="media-heading">Posts</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Mar 3, 2019
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -832,7 +833,7 @@ Fortunately, those responses have softened over time.</div>
          data-message-zero="no post found"
          data-message-one="1 post found"
          data-message-other="{n} posts found">
-         10 posts found
+         11 posts found
       </p>
     </div>
   </div>

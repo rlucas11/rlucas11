@@ -6,9 +6,19 @@
     <description>Recent content in Categories on The Desk Reject</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://deskreject.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Journals</title>
+      <link>https://deskreject.com/categories/journals/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://deskreject.com/categories/journals/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Happiness</title>
@@ -20,11 +30,11 @@
     </item>
     
     <item>
-      <title>Improving Psychology</title>
-      <link>https://deskreject.com/categories/improving-psychology/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <title>Teaching</title>
+      <link>https://deskreject.com/categories/teaching/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://deskreject.com/categories/improving-psychology/</guid>
+      <guid>https://deskreject.com/categories/teaching/</guid>
       <description></description>
     </item>
     
@@ -38,11 +48,11 @@
     </item>
     
     <item>
-      <title>Teaching</title>
-      <link>https://deskreject.com/categories/teaching/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      <title>Improving Psychology</title>
+      <link>https://deskreject.com/categories/improving-psychology/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://deskreject.com/categories/teaching/</guid>
+      <guid>https://deskreject.com/categories/improving-psychology/</guid>
       <description></description>
     </item>
     

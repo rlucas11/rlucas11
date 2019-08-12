@@ -3,69 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://deskreject.com/2019/03/measuring-happiness-is-hard/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2019/02/how-to-measure-happiness/</loc>
-    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2019/01/r-exams/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2018/07/harping/</loc>
-    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2017/06/w.w.p.m.d/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2017/05/the-rules-of-replication-part-ii/</loc>
-    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/2017/05/the-rules-of-replication/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/archives/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://deskreject.com/categories/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://deskreject.com/tags/context/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <loc>https://deskreject.com/tags/journals/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://deskreject.com/tags/expertise/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <loc>https://deskreject.com/categories/journals/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/post/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/replicability/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/spsp/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2019/08/time-for-change-at-spsp-journals/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/transparency/</loc>
+    <lastmod>2019-08-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -82,63 +74,14 @@
   </url>
   
   <url>
-    <loc>https://deskreject.com/categories/improving-psychology/</loc>
-    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/tags/manipulation-checks/</loc>
-    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://deskreject.com/tags/measurement/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://deskreject.com/post/</loc>
+    <loc>https://deskreject.com/2019/03/measuring-happiness-is-hard/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/tags/r/exams/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/tags/replicability/</loc>
-    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/tags/replications/</loc>
-    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/categories/replications/</loc>
-    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/tags/reputations/</loc>
-    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://deskreject.com/tags/rstats/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -148,8 +91,13 @@
   </url>
   
   <url>
-    <loc>https://deskreject.com/tags/</loc>
-    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <loc>https://deskreject.com/2019/02/how-to-measure-happiness/</loc>
+    <lastmod>2019-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/r/exams/</loc>
+    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -166,14 +114,96 @@
   </url>
   
   <url>
-    <loc>https://deskreject.com/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+    <loc>https://deskreject.com/2019/01/r-exams/</loc>
+    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/rstats/</loc>
+    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2018/07/harping/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/replications/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/categories/replications/</loc>
+    <lastmod>2018-07-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2018/03/happiness-research-during-the-replication-crisis/</loc>
+    <lastmod>2018-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/categories/improving-psychology/</loc>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://deskreject.com/tags/theory/</loc>
     <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2017/09/yes-your-field-does-need-to-worry-about-replicability/</loc>
+    <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/context/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/expertise/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2017/06/w.w.p.m.d/</loc>
+    <lastmod>2017-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/manipulation-checks/</loc>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2017/05/the-rules-of-replication-part-ii/</loc>
+    <lastmod>2017-05-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/tags/reputations/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/2017/05/the-rules-of-replication/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://deskreject.com/archives/</loc>
     <priority>0</priority>
   </url>
   
